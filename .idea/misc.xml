@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/CalvinJS/AndroidStudioProjects/ABCMobile-Progress1/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/CalvinJS/AndroidStudioProjects/ABCMobile-Progress1/app/src/main/res/layout/berhasil.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/CalvinJS/AndroidStudioProjects/ABCMobile-Progress1/app/src/main/res/layout/buka_rekening_baru.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/CalvinJS/AndroidStudioProjects/ABCMobile-Progress1/app/src/main/res/layout/gagal.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/CalvinJS/AndroidStudioProjects/ABCMobile-Progress1/app/src/main/res/layout/ganti_kode_akses.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/CalvinJS/AndroidStudioProjects/ABCMobile-Progress1/app/src/main/res/layout/info_saldo.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/CalvinJS/AndroidStudioProjects/ABCMobile-Progress1/app/src/main/res/layout/input_kode_akses.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/CalvinJS/AndroidStudioProjects/ABCMobile-Progress1/app/src/main/res/layout/konfirmasi.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/CalvinJS/AndroidStudioProjects/ABCMobile-Progress1/app/src/main/res/layout/m_abc.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/CalvinJS/AndroidStudioProjects/ABCMobile-Progress1/app/src/main/res/layout/m_info.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/CalvinJS/AndroidStudioProjects/ABCMobile-Progress1/app/src/main/res/layout/m_payment.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/CalvinJS/AndroidStudioProjects/ABCMobile-Progress1/app/src/main/res/layout/m_transfer.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/CalvinJS/AndroidStudioProjects/ABCMobile/app/src/main/res/drawable/round_rectangle.xml" value="0.3675" />
+        <entry key="..\:/Users/CalvinJS/AndroidStudioProjects/ABCMobile/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/Users/CalvinJS/AndroidStudioProjects/ABCMobile/app/src/main/res/layout/berhasil.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/CalvinJS/AndroidStudioProjects/ABCMobile/app/src/main/res/layout/gagal.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/CalvinJS/AndroidStudioProjects/ABCMobile/app/src/main/res/layout/ganti_kode_akses.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/CalvinJS/AndroidStudioProjects/ABCMobile/app/src/main/res/layout/info_saldo.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/CalvinJS/AndroidStudioProjects/ABCMobile/app/src/main/res/layout/input_kode_akses.xml" value="0.33" />
+        <entry key="..\:/Users/CalvinJS/AndroidStudioProjects/ABCMobile/app/src/main/res/layout/konfirmasi.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/CalvinJS/AndroidStudioProjects/ABCMobile/app/src/main/res/layout/m_abc.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/CalvinJS/AndroidStudioProjects/ABCMobile/app/src/main/res/layout/m_info.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/CalvinJS/AndroidStudioProjects/ABCMobile/app/src/main/res/layout/m_transfer.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/chris/AndroidStudioProjects/ABCMobile/app/src/main/res/layout/activity_main.xml" value="0.26222826086956524" />
+        <entry key="..\:/Users/chris/AndroidStudioProjects/ABCMobile/app/src/main/res/layout/berhasil.xml" value="0.26222826086956524" />
+        <entry key="..\:/Users/chris/AndroidStudioProjects/ABCMobile/app/src/main/res/layout/buka_rekening_baru.xml" value="0.26222826086956524" />
+        <entry key="..\:/Users/chris/AndroidStudioProjects/ABCMobile/app/src/main/res/layout/gagal.xml" value="0.26222826086956524" />
+        <entry key="..\:/Users/chris/AndroidStudioProjects/ABCMobile/app/src/main/res/layout/ganti_kode_akses.xml" value="0.26222826086956524" />
+        <entry key="..\:/Users/chris/AndroidStudioProjects/ABCMobile/app/src/main/res/layout/info_saldo.xml" value="0.26222826086956524" />
+        <entry key="..\:/Users/chris/AndroidStudioProjects/ABCMobile/app/src/main/res/layout/input_kode_akses.xml" value="0.1" />
+        <entry key="..\:/Users/chris/AndroidStudioProjects/ABCMobile/app/src/main/res/layout/konfirmasi.xml" value="0.26222826086956524" />
+        <entry key="..\:/Users/chris/AndroidStudioProjects/ABCMobile/app/src/main/res/layout/m_abc.xml" value="0.26222826086956524" />
+        <entry key="..\:/Users/chris/AndroidStudioProjects/ABCMobile/app/src/main/res/layout/m_info.xml" value="0.26222826086956524" />
+        <entry key="..\:/Users/chris/AndroidStudioProjects/ABCMobile/app/src/main/res/layout/m_payment.xml" value="0.26222826086956524" />
+        <entry key="..\:/Users/chris/AndroidStudioProjects/ABCMobile/app/src/main/res/layout/m_transfer.xml" value="0.33" />
+        <entry key="..\:/Users/chris/AndroidStudioProjects/ABCMobile/app/src/main/res/layout/tset.xml" value="0.26222826086956524" />
+        <entry key="..\:/Users/chris/OneDrive/Dokumen/ABCMobile/ABCMobile/app/src/main/res/drawable/round_rectangle.xml" value="0.141" />
+        <entry key="..\:/Users/chris/OneDrive/Dokumen/ABCMobile/ABCMobile/app/src/main/res/layout/activity_main.xml" value="0.2667572463768116" />
+        <entry key="..\:/Users/chris/OneDrive/Dokumen/ABCMobile/ABCMobile/app/src/main/res/layout/berhasil.xml" value="0.259963768115942" />
+        <entry key="..\:/Users/chris/OneDrive/Dokumen/ABCMobile/ABCMobile/app/src/main/res/layout/konfirmasi.xml" value="0.33" />
+        <entry key="..\:/Users/chris/OneDrive/Dokumen/ABCMobile/ABCMobile/app/src/main/res/layout/m_abc.xml" value="0.2667572463768116" />
+        <entry key="..\:/Users/chris/OneDrive/Dokumen/ABCMobile/ABCMobile/app/src/main/res/layout/m_info.xml" value="0.259963768115942" />
+        <entry key="..\:/Users/chris/OneDrive/Dokumen/ABCMobile/ABCMobile/app/src/main/res/layout/m_payment.xml" value="0.2667572463768116" />
+        <entry key="..\:/Users/chris/OneDrive/Dokumen/ABCMobile/ABCMobile/app/src/main/res/layout/m_transfer.xml" value="0.1" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

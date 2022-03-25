@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#163d97">
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="25dp"
+        android:background="#686868"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="10dp"
+            android:text="m-Transfer"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="24dp" />
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="7dp"
+            android:backgroundTint="#2866f3"
+            android:text="Send" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginBottom="1dp"
+        android:background="@drawable/round_rectangle"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout5">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="132dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp"
+                android:gravity="center"
+                android:text="Mobile Payment"
+                android:textColor="#2866f3"
+                android:textSize="24dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="#686868">
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Transfer"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="13dp"
+                    android:paddingRight="13dp">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="40dp"
+                        android:layout_marginBottom="3dp"
+                        android:layout_marginTop="3dp">
+
+                        <TextView
+                            android:id="@+id/textView9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Nama Sesuai KTP"
+                            android:textColor="#2866f3"
+                            android:textSize="18dp"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="7dp" />
+
+                        <EditText
+                            android:layout_width="150dp"
+                            android:layout_height="match_parent"
+                            android:background="@null"
+                            android:gravity="right"
+                            android:hint="@string/input" />
+                    </TableRow>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="15dp"
+                        android:background="#c0c0c0" />
+                </TableLayout>
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="13dp"
+                    android:paddingRight="13dp">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="40dp"
+                        android:layout_marginBottom="3dp"
+                        android:layout_marginTop="3dp">
+
+                        <TextView
+                            android:id="@+id/textView10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Tempat/Tgl Lahir"
+                            android:textColor="#2866f3"
+                            android:textSize="18dp"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="7dp" />
+
+                        <EditText
+                            android:layout_width="156dp"
+                            android:layout_height="match_parent"
+                            android:background="@null"
+                            android:gravity="right"
+                            android:hint="@string/input" />
+                    </TableRow>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="15dp"
+                        android:background="#c0c0c0" />
+                </TableLayout>
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="13dp"
+                    android:paddingRight="13dp">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="40dp"
+                        android:layout_marginBottom="3dp"
+                        android:layout_marginTop="3dp">
+
+                        <TextView
+                            android:id="@+id/textView12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Jenis Kelamin"
+                            android:textColor="#2866f3"
+                            android:textSize="18dp"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="7dp" />
+
+                        <EditText
+                            android:layout_width="183dp"
+                            android:layout_height="match_parent"
+                            android:background="@null"
+                            android:gravity="right"
+                            android:hint="@string/input" />
+                    </TableRow>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="15dp"
+                        android:background="#c0c0c0" />
+                </TableLayout>
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="13dp"
+                    android:paddingRight="13dp">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="40dp"
+                        android:layout_marginBottom="3dp"
+                        android:layout_marginTop="3dp">
+
+                        <TextView
+                            android:id="@+id/textView13"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Alamat"
+                            android:textColor="#2866f3"
+                            android:textSize="18dp"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="7dp" />
+
+                        <EditText
+                            android:layout_width="234dp"
+                            android:layout_height="match_parent"
+
+                            android:background="@null"
+                            android:gravity="right"
+                            android:hint="@string/input" />
+                    </TableRow>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="15dp"
+                        android:background="#c0c0c0" />
+                </TableLayout>
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="13dp"
+                    android:paddingRight="13dp">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="40dp"
+                        android:layout_marginBottom="3dp"
+                        android:layout_marginTop="3dp">
+
+                        <TextView
+                            android:id="@+id/textView14"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Status Perkawinan"
+                            android:textColor="#2866f3"
+                            android:textSize="18dp"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="7dp" />
+
+                        <EditText
+                            android:layout_width="145dp"
+                            android:layout_height="match_parent"
+                            android:background="@null"
+                            android:gravity="right"
+                            android:hint="@string/input" />
+                    </TableRow>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="15dp"
+                        android:background="#c0c0c0" />
+                </TableLayout>
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="13dp"
+                    android:paddingRight="13dp">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="40dp"
+                        android:layout_marginBottom="3dp"
+                        android:layout_marginTop="3dp">
+
+                        <TextView
+                            android:id="@+id/textView15"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Pekerjaan"
+                            android:textColor="#2866f3"
+                            android:textSize="18dp"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="7dp" />
+
+                        <EditText
+                            android:layout_width="213dp"
+                            android:layout_height="match_parent"
+                            android:background="@null"
+                            android:gravity="right"
+                            android:hint="@string/input" />
+                    </TableRow>
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="2dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="15dp"
+                        android:background="#c0c0c0" />
+                </TableLayout>
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="13dp"
+                    android:paddingRight="13dp">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="40dp"
+                        android:layout_marginBottom="3dp"
+                        android:layout_marginTop="3dp">
+
+                        <TextView
+                            android:id="@+id/textView16"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Kewarganegaraan"
+                            android:textColor="#2866f3"
+                            android:textSize="18dp"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="7dp" />
+
+                        <EditText
+                            android:layout_width="150dp"
+                            android:layout_height="match_parent"
+                            android:background="@null"
+                            android:gravity="right"
+                            android:hint="@string/input" />
+                    </TableRow>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="15dp"
+                        android:background="#c0c0c0" />
+                </TableLayout>
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="13dp"
+                    android:paddingRight="13dp">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="40dp"
+                        android:layout_marginBottom="3dp"
+                        android:layout_marginTop="3dp">
+
+                        <TextView
+                            android:id="@+id/textView17"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="No. HP"
+                            android:textColor="#2866f3"
+                            android:textSize="18dp"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="7dp" />
+
+                        <EditText
+                            android:layout_width="238dp"
+                            android:layout_height="match_parent"
+                            android:background="@null"
+                            android:gravity="right"
+                            android:hint="@string/input" />
+                    </TableRow>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="15dp"
+                        android:background="#c0c0c0" />
+                </TableLayout>
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="13dp"
+                    android:paddingRight="13dp">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="40dp"
+                        android:layout_marginBottom="3dp"
+                        android:layout_marginTop="3dp">
+
+                        <TextView
+                            android:id="@+id/textView18"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Kode Akses"
+                            android:textColor="#2866f3"
+                            android:textSize="18dp"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="7dp" />
+
+                        <EditText
+                            android:layout_width="196dp"
+                            android:layout_height="match_parent"
+                            android:background="@null"
+                            android:gravity="right"
+                            android:hint="@string/input" />
+                    </TableRow>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="15dp"
+                        android:background="#c0c0c0" />
+                </TableLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
