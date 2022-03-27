@@ -1,0 +1,209 @@
+{
+	"info": {
+		"_postman_id": "4094b187-426e-4108-882e-8c5ee47d32d9",
+		"name": "ABCmobile",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "InfoAccount",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "nomor_kartu",
+							"value": "123456789",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8080/infoaccount",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"infoaccount"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Transfer",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "jumlah",
+							"value": "50000",
+							"type": "text"
+						},
+						{
+							"key": "berita",
+							"value": "pembelian gitar",
+							"type": "text"
+						},
+						{
+							"key": "rekening_pengirim",
+							"value": "987654321",
+							"type": "text"
+						},
+						{
+							"key": "rekening_penerima",
+							"value": "987654",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8080/transfer",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"transfer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Virtualaccount",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "rekening_pengirim",
+							"value": "987654321",
+							"type": "text"
+						},
+						{
+							"key": "rekening_penerima",
+							"value": "987654",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8080/virtualaccount",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"virtualaccount"
+					],
+					"query": [
+						{
+							"key": "rekening_pengirim",
+							"value": "987654321",
+							"disabled": true
+						},
+						{
+							"key": "rekening_penerima",
+							"value": "987654",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "RekeningBaru",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "nama",
+							"value": "aji",
+							"type": "text"
+						},
+						{
+							"key": "ttl",
+							"value": "bandung/ 12 desemer 2001",
+							"type": "text"
+						},
+						{
+							"key": "jenis_kelamin",
+							"value": "0",
+							"type": "text"
+						},
+						{
+							"key": "alamat",
+							"value": "bulan",
+							"type": "text"
+						},
+						{
+							"key": "agama",
+							"value": "islam",
+							"type": "text"
+						},
+						{
+							"key": "status_perkawinan",
+							"value": "0",
+							"type": "text"
+						},
+						{
+							"key": "pekerjaan",
+							"value": "DJ",
+							"type": "text"
+						},
+						{
+							"key": "kewarganegaraan",
+							"value": "Indonesia",
+							"type": "text"
+						},
+						{
+							"key": "no_hp",
+							"value": "08546512316",
+							"type": "text"
+						},
+						{
+							"key": "kodeakses",
+							"value": "456",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8080/rekeningbaru",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"rekeningbaru"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GantiKodeAkses",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
