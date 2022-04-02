@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -10,93 +10,170 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="110dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="102dp"
+        android:layout_marginBottom="22dp"
         android:text="ABC"
         android:textColor="@color/white"
         android:textSize="48sp"
-        tools:layout_editor_absoluteX="110dp"
-        tools:layout_editor_absoluteY="45dp" />
+        app:layout_constraintBottom_toTopOf="@+id/textView11"
+        app:layout_constraintEnd_toEndOf="@+id/textView3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
         android:text="mobile"
         android:textColor="@color/white"
         android:textSize="34sp"
-        tools:layout_editor_absoluteX="202dp"
-        tools:layout_editor_absoluteY="64dp" />
+        app:layout_constraintBottom_toBottomOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="@+id/textView12" />
 
     <TextView
         android:id="@+id/textView11"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
         android:text="Selamat Datang"
         android:textColor="@color/white"
         android:textSize="18sp"
-        tools:layout_editor_absoluteX="142dp"
-        tools:layout_editor_absoluteY="131dp" />
+        app:layout_constraintBottom_toTopOf="@+id/textView12"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <TextView
         android:id="@+id/textView12"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="56dp"
         android:text="USER"
         android:textColor="@color/white"
         android:textSize="18sp"
-        tools:layout_editor_absoluteX="184dp"
-        tools:layout_editor_absoluteY="155dp" />
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
+        android:id="@+id/linearLayout8"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
         android:orientation="horizontal"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="236dp">
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView12">
 
-        <TextView
-            android:id="@+id/textView13"
-            android:layout_width="50dp"
+        <LinearLayout
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="85dp"
-            android:layout_marginTop="10dp"
-            android:text="m-Info"
-            android:textColor="@color/white" />
+            android:gravity="center"
+            android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/textView15"
-            android:layout_width="80dp"
+            <ImageView
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_baseline_account_balance_24"></ImageView>
+
+            <TextView
+                android:id="@+id/tv_minfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="m-Info"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="135dp"
-            android:layout_marginTop="10dp"
-            android:text="m-Transfer"
-            android:textColor="@color/white" />
+            android:layout_marginLeft="75dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:src="@drawable/ic_baseline_transform_24"></ImageView>
+
+            <TextView
+                android:id="@+id/tv_mtransfer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="m-Transfer"
+                android:textColor="@color/white" />
+        </LinearLayout>
 
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
+        android:id="@+id/linearLayout9"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="96dp"
+        android:gravity="center"
         android:orientation="horizontal"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="436dp">
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout8">
 
-        <TextView
-            android:id="@+id/textView14"
-            android:layout_width="80dp"
+        <LinearLayout
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="70dp"
-            android:layout_marginTop="10dp"
-            android:text="m-Payment"
-            android:textColor="@color/white" />
+            android:gravity="center"
+            android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/textView16"
-            android:layout_width="30dp"
+            <ImageView
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:src="@drawable/ic_baseline_attach_money_24"></ImageView>
+
+            <TextView
+                android:id="@+id/tv_mpayment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="m-Payment"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="140dp"
-            android:layout_marginTop="10dp"
-            android:text="exit"
-            android:textColor="@color/white" />
+            android:layout_marginLeft="75dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:src="@drawable/ic_baseline_exit_to_app_24"></ImageView>
+
+            <TextView
+                android:id="@+id/tv_exit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="exit"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
     </LinearLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        app:itemIconTint="@color/white"
+        app:itemTextColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:menu="@menu/navbar" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

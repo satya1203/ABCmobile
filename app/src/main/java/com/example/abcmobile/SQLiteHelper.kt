@@ -2,10 +2,12 @@ package com.example.abcmobile
 
 import android.content.ContentValues
 import android.content.Context
-import android.database.Cursor
 import android.database.sqlite.SQLiteDatabase
 import android.database.sqlite.SQLiteOpenHelper
-import java.lang.Exception
+import com.example.abcmobile.model_db_local.NasabahModel
+import com.example.abcmobile.model_db_local.RekeningModel
+import com.example.abcmobile.model_db_local.TransferModel
+import com.example.abcmobile.model_db_local.VAModel
 
 class SQLiteHelper(context:Context) :
     SQLiteOpenHelper(context, DATABASE_NAME, null, DATABASE_VERSION) {
@@ -94,7 +96,7 @@ class SQLiteHelper(context:Context) :
         return success
     }
 
-    fun insertTransaksi(tk : TransaksiModel): Long {
+    fun insertTransaksi(tk : TransferModel): Long {
         val db = this.writableDatabase
         val contentValues = ContentValues()
 
@@ -130,7 +132,7 @@ class SQLiteHelper(context:Context) :
         return success
     }
 
-
+    /*
      fun getSaldo(rk : RekeningModel): ArrayList<RekeningModel>{
          val stdList : ArrayList<RekeningModel> = ArrayList()
          val selectQuery = "SELECT * FROM $TBL_REKENING WHERE noRekening = noRekening"
@@ -162,7 +164,7 @@ class SQLiteHelper(context:Context) :
                  return stdList
          }
      }
-
+    */
     //Kode Akses dan Login
    // fun login()
 

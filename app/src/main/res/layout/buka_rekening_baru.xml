@@ -45,9 +45,9 @@
         android:id="@+id/linearLayout"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginStart="31dp"
-        android:layout_marginEnd="31dp"
-        android:layout_marginBottom="1dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
         android:background="@drawable/round_rectangle"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -57,14 +57,14 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="132dp"
+            android:layout_height="wrap_content"
             android:orientation="vertical">
 
             <TextView
                 android:id="@+id/textView7"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="60dp"
+                android:padding="20dp"
                 android:gravity="center"
                 android:text="Mobile Payment"
                 android:textColor="#2866f3"
@@ -74,7 +74,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="vertical">
 
             <LinearLayout
@@ -113,7 +113,7 @@
                         android:layout_marginTop="3dp">
 
                         <TextView
-                            android:id="@+id/textView9"
+                            android:id="@+id/tv_nama_ktp"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Nama Sesuai KTP"
@@ -124,8 +124,9 @@
                             android:layout_marginTop="7dp" />
 
                         <EditText
-                            android:layout_width="150dp"
-                            android:layout_height="match_parent"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="63dp"
                             android:background="@null"
                             android:gravity="right"
                             android:hint="@string/input" />
@@ -153,7 +154,7 @@
                         android:layout_marginTop="3dp">
 
                         <TextView
-                            android:id="@+id/textView10"
+                            android:id="@+id/tv_ttl"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Tempat/Tgl Lahir"
@@ -164,9 +165,10 @@
                             android:layout_marginTop="7dp" />
 
                         <EditText
-                            android:layout_width="156dp"
-                            android:layout_height="match_parent"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
                             android:background="@null"
+                            android:layout_marginLeft="70dp"
                             android:gravity="right"
                             android:hint="@string/input" />
                     </TableRow>
@@ -193,7 +195,7 @@
                         android:layout_marginTop="3dp">
 
                         <TextView
-                            android:id="@+id/textView12"
+                            android:id="@+id/tv_jenis_kelamin"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Jenis Kelamin"
@@ -204,9 +206,10 @@
                             android:layout_marginTop="7dp" />
 
                         <EditText
-                            android:layout_width="183dp"
-                            android:layout_height="match_parent"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
                             android:background="@null"
+                            android:layout_marginLeft="95dp"
                             android:gravity="right"
                             android:hint="@string/input" />
                     </TableRow>
@@ -233,7 +236,7 @@
                         android:layout_marginTop="3dp">
 
                         <TextView
-                            android:id="@+id/textView13"
+                            android:id="@+id/tv_alamat"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Alamat"
@@ -244,10 +247,10 @@
                             android:layout_marginTop="7dp" />
 
                         <EditText
-                            android:layout_width="234dp"
-                            android:layout_height="match_parent"
-
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
                             android:background="@null"
+                            android:layout_marginLeft="150dp"
                             android:gravity="right"
                             android:hint="@string/input" />
                     </TableRow>
@@ -274,7 +277,7 @@
                         android:layout_marginTop="3dp">
 
                         <TextView
-                            android:id="@+id/textView14"
+                            android:id="@+id/tv_status_kawin"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Status Perkawinan"
@@ -285,8 +288,9 @@
                             android:layout_marginTop="7dp" />
 
                         <EditText
-                            android:layout_width="145dp"
-                            android:layout_height="match_parent"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="57dp"
                             android:background="@null"
                             android:gravity="right"
                             android:hint="@string/input" />
@@ -314,7 +318,7 @@
                         android:layout_marginTop="3dp">
 
                         <TextView
-                            android:id="@+id/textView15"
+                            android:id="@+id/tv_pekerjaan"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Pekerjaan"
@@ -325,9 +329,10 @@
                             android:layout_marginTop="7dp" />
 
                         <EditText
-                            android:layout_width="213dp"
-                            android:layout_height="match_parent"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
                             android:background="@null"
+                            android:layout_marginLeft="125dp"
                             android:gravity="right"
                             android:hint="@string/input" />
                     </TableRow>
@@ -354,7 +359,7 @@
                         android:layout_marginTop="3dp">
 
                         <TextView
-                            android:id="@+id/textView16"
+                            android:id="@+id/tv_kewarganegaraan"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Kewarganegaraan"
@@ -365,9 +370,10 @@
                             android:layout_marginTop="7dp" />
 
                         <EditText
-                            android:layout_width="150dp"
-                            android:layout_height="match_parent"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
                             android:background="@null"
+                            android:layout_marginLeft="60dp"
                             android:gravity="right"
                             android:hint="@string/input" />
                     </TableRow>
@@ -394,7 +400,7 @@
                         android:layout_marginTop="3dp">
 
                         <TextView
-                            android:id="@+id/textView17"
+                            android:id="@+id/tv_hp"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="No. HP"
@@ -405,8 +411,9 @@
                             android:layout_marginTop="7dp" />
 
                         <EditText
-                            android:layout_width="238dp"
-                            android:layout_height="match_parent"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="145dp"
                             android:background="@null"
                             android:gravity="right"
                             android:hint="@string/input" />
@@ -434,7 +441,7 @@
                         android:layout_marginTop="3dp">
 
                         <TextView
-                            android:id="@+id/textView18"
+                            android:id="@+id/tv_kode"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Kode Akses"
@@ -445,9 +452,10 @@
                             android:layout_marginTop="7dp" />
 
                         <EditText
-                            android:layout_width="196dp"
-                            android:layout_height="match_parent"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
                             android:background="@null"
+                            android:layout_marginLeft="105dp"
                             android:gravity="right"
                             android:hint="@string/input" />
                     </TableRow>

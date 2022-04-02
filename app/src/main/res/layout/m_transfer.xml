@@ -113,7 +113,7 @@
                         android:layout_marginTop="3dp">
 
                         <TextView
-                            android:id="@+id/textView9"
+                            android:id="@+id/tv_rek_tujuan"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="No. Rekening Tujuan"
@@ -124,20 +124,23 @@
                             android:layout_marginTop="7dp" />
 
                         <EditText
-                            android:layout_width="160dp"
-                            android:layout_height="match_parent"
+                            android:id="@+id/et_rek_tujuan"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
                             android:paddingLeft="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="40dp"
                             android:hint="@string/input"
-                            android:background="@null"
-                            android:gravity="center"/>
+                            android:background="@null"/>
                     </TableRow>
+
                     <View
                         android:layout_width="match_parent"
                         android:layout_height="2dp"
                         android:layout_marginLeft="15dp"
                         android:layout_marginTop="5dp"
                         android:layout_marginRight="15dp"
-                        android:background="#c0c0c0" />
+                        android:background="#c0c0c0"/>
 
                     <TableRow
                         android:layout_width="match_parent"
@@ -147,7 +150,7 @@
                         android:layout_marginTop="3dp">
 
                         <TextView
-                            android:id="@+id/textView10"
+                            android:id="@+id/tv_jumlah"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Jumlah Uang Rp."
@@ -155,17 +158,18 @@
                             android:textSize="18dp"
                             android:textStyle="bold"
                             android:layout_marginLeft="15dp"
-                            android:layout_marginTop="7dp"
-                            />
+                            android:layout_marginTop="7dp" />
 
                         <EditText
-                            android:layout_width="160dp"
-                            android:layout_height="match_parent"
-                            android:paddingLeft="5dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="40dp"
                             android:hint="@string/input"
-                            android:background="@null"
-                            android:gravity="center"/>
+                            android:background="@null"/>
                     </TableRow>
+
                     <View
                         android:layout_width="match_parent"
                         android:layout_height="2dp"
@@ -182,7 +186,7 @@
                         android:layout_marginTop="3dp">
 
                         <TextView
-                            android:id="@+id/textView11"
+                            android:id="@+id/tv_berita"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Berita"
@@ -190,17 +194,18 @@
                             android:textSize="18dp"
                             android:textStyle="bold"
                             android:layout_marginLeft="15dp"
-                            android:layout_marginTop="7dp"
-                            />
+                            android:layout_marginTop="7dp"/>
 
                         <EditText
-                            android:layout_width="160dp"
-                            android:layout_height="match_parent"
-                            android:paddingLeft="5dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="40dp"
                             android:hint="@string/input"
-                            android:background="@null"
-                            android:gravity="center"/>
+                            android:background="@null"/>
                     </TableRow>
+
                     <View
                         android:layout_width="match_parent"
                         android:layout_height="2dp"
@@ -208,29 +213,8 @@
                         android:layout_marginTop="5dp"
                         android:layout_marginRight="15dp"
                         android:background="#c0c0c0" />
+
                 </TableLayout>
-
-
-
-
-<!--                <TextView-->
-<!--                    android:id="@+id/textView10"-->
-<!--                    android:layout_width="match_parent"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:layout_marginLeft="15dp"-->
-<!--                    android:layout_marginTop="20dp"-->
-<!--                    android:text="Antar Bank"-->
-<!--                    android:textColor="#2866f3"-->
-<!--                    android:textSize="18dp"-->
-<!--                    android:textStyle="bold" />-->
-
-<!--                <View-->
-<!--                    android:layout_width="match_parent"-->
-<!--                    android:layout_height="2dp"-->
-<!--                    android:layout_marginLeft="15dp"-->
-<!--                    android:layout_marginTop="5dp"-->
-<!--                    android:layout_marginRight="15dp"-->
-<!--                    android:background="#c0c0c0" />-->
 
             </LinearLayout>
 

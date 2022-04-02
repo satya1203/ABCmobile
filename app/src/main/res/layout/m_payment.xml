@@ -31,10 +31,10 @@
             android:textSize="24dp" />
 
         <Button
-            android:id="@+id/button5"
-            android:layout_width="75dp"
+            android:id="@+id/btn_send"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="50dp"
+            android:layout_marginLeft="40dp"
             android:layout_marginTop="7dp"
             android:backgroundTint="#2866f3"
             android:text="Send" />

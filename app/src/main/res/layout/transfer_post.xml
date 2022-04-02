@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/tv_id_transfer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:text="ID"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:id="@+id/tv_jumlah"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jumlah"
+            android:textSize="18dp"/>
+
+        <TextView
+            android:id="@+id/tv_berita"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Berita"
+            android:textSize="18dp"
+            android:maxLines="2"/>
+
+        <TextView
+            android:id="@+id/tv_pengirim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rek.Pengirim"
+            android:textSize="18dp"/>
+
+        <TextView
+            android:id="@+id/tv_penerima"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rek.Penerima"
+            android:textSize="18dp"/>
+
+        <TextView
+            android:id="@+id/tv_waktu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Waktu"
+            android:textSize="18dp"/>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

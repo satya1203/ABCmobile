@@ -44,6 +44,7 @@
         android:layout_marginEnd="20dp"
         android:layout_marginBottom="428dp"
         android:background="@drawable/round_rectangle"
+        android:gravity="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -53,11 +54,9 @@
             android:id="@+id/textView1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="135dp"
-            android:layout_marginTop="30dp"
             android:text="Konfirmasi"
             android:textColor="@color/black"
-            android:textSize="20dp" />
+            android:textSize="28dp" />
 
     </LinearLayout>
 
@@ -70,24 +69,25 @@
         android:layout_marginBottom="385dp"
         android:background="@drawable/round_rectangle"
         android:orientation="horizontal"
+        android:gravity="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView">
 
         <Button
+            android:id="@+id/btn_batal"
             android:layout_width="100dp"
             android:layout_height="40dp"
-            android:layout_marginLeft="50dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginright="20dp"
             android:backgroundTint="#2866f3"
             android:text="Batal"></Button>
 
         <Button
+            android:id="@+id/btn_kirim"
             android:layout_width="100dp"
             android:layout_height="40dp"
-            android:layout_marginLeft="70dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
             android:backgroundTint="#2866f3"
             android:text="Kirim"></Button>
 
