@@ -34,7 +34,6 @@ public class AccountAdapter extends RecyclerView.Adapter<AccountAdapter.HolderDa
     @Override
     public void onBindViewHolder(@NonNull HolderData holder, int position) {
         AccountModel am = listAccount.get(position);
-
         holder.tv_username.setText(am.getUser());
         holder.tv_norek.setText(am.getNomorRekening());
         holder.tv_saldo.setText(String.valueOf(am.getSaldo()));

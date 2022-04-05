@@ -4,15 +4,15 @@ import (
 	"fmt"
 	"time"
 
-	controllers "github.com/ABCmobile/controller"
+	controllers "github.com/ABCMobile/controller"
+	_ "github.com/go-sql-driver/mysql"
 
 	"github.com/gin-contrib/cors"
 	"github.com/gin-gonic/gin"
-	_ "github.com/go-sql-driver/mysql"
 )
 
 func main() {
-	fmt.Println("ABCmobile API")
+	fmt.Println("ABCMobile API")
 
 	router := gin.Default()
 
@@ -28,16 +28,29 @@ func main() {
 		MaxAge: 12 * time.Hour,
 	}))
 
-	// Melihat info account
-	router.GET("/infoaccount", controllers.GetInfoAccount)
+	//Login
+	router.GET("/login", controllers.Login)
+
+	//Logout
+	router.GET("/logout", controllers.Logout)
+
+	//Melihat Daftar Transfer
+	router.GET("/listTransfer", controllers.GetTransfer)
+
+	// Melihat Info Account
+	router.GET("/infoaccount/:nomor_kartu", controllers.GetInfoAccount)
+
 	// Transfer
-	router.POST("/transfer", controllers.InsertTransfer)
+	router.POST("/insertTransfer", controllers.InsertTransfer)
+
 	// Virtual Account
 	router.POST("/virtualaccount", controllers.InsertVirtualAccount)
-	// Membuat rekening baru
+
+	// Membuat Rekening Baru
 	router.POST("/rekeningbaru", controllers.InsertRekening)
-	// Ganti kode akses
-	router.PUT("/gantikodeakses", controllers.UpdateKodeAkses)
+
+	// Ganti Kode Akses
+	router.PUT("/gantikodeakses/:nomor_rekening", controllers.UpdateKodeAkses)
 
 	router.Run(":8080")
 	fmt.Println("Connected to port 8080")

@@ -7,7 +7,7 @@ import (
 	"github.com/golang-jwt/jwt"
 )
 
-var jwtKey = []byte("autoresto")
+var jwtKey = []byte("abcmobile")
 var tokenName = "token"
 
 type Claims struct {

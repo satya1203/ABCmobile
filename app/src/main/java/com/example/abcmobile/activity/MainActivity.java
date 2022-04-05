@@ -1,29 +1,36 @@
-package com.example.abcmobile
+package com.example.abcmobile.activity;
 
-import androidx.appcompat.app.AppCompatActivity
-import android.os.Bundle
-import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.abcmobile.api.AccountResponse
-import com.example.abcmobile.api.RetroFitClient
-import com.example.abcmobile.api.TransferResponse
-import kotlinx.android.synthetic.main.list_transaksi.*
-import retrofit2.Call
-import retrofit2.Callback
-import retrofit2.Response
+import androidx.appcompat.app.AppCompatActivity;
+import android.os.Bundle;
+import android.widget.Toast;
 
-class MainActivity : AppCompatActivity() {
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
-    private val list = ArrayList<AccountResponse>()
+import com.example.abcmobile.R;
+import com.example.abcmobile.adapter.TransferAdapter;
+import com.example.abcmobile.api.ApiRequestData;
+import com.example.abcmobile.model.AccountResponse;
+import com.example.abcmobile.api.RetroFitClient;
+import com.example.abcmobile.model.TransferModel;
+import com.example.abcmobile.model.TransferResponse;
+//import kotlinx.android.synthetic.main.list_transaksi.*;
+import java.util.ArrayList;
+import java.util.List;
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
 
-        showInfoAccount()
-        insertTransfer()
-        updateKodeAkses()
-    }
+public class MainActivity extends AppCompatActivity {
 
+    //private val list = ArrayList<AccountResponse>()
+
+    //showInfoAccount()
+    //insertTransfer()
+    //updateKodeAkses()
+
+    /*
     private fun updateKodeAkses() {
         RetroFitClient.instance.updateKodeAkses(
             "987654",
@@ -99,5 +106,5 @@ class MainActivity : AppCompatActivity() {
 
         })
     }
-
+    */
 }

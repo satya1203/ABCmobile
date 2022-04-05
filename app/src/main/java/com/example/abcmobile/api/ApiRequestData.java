@@ -1,14 +1,23 @@
-package com.example.abcmobile.api
+package com.example.abcmobile.api;
 
-import retrofit2.Call
-import retrofit2.http.*
+import com.example.abcmobile.model.AccountResponse;
+import com.example.abcmobile.model.TransferModel;
+import com.example.abcmobile.model.TransferResponse;
+import com.example.abcmobile.model.UserResponse;
+import com.example.abcmobile.model.VirtualAccountResponse;
+import retrofit2.Call;
+import retrofit2.http.*;
 
-interface Api {
+public interface ApiRequestData {
+    @GET("/listTransfer")
+    Call<TransferResponse> getListTransfer();
+
+    /*
     @GET("/infoaccount")
-    fun getInfoTransaksi(): Call<AccountResponse>
+    Call<AccountResponse> getAccountInfo();
 
     @GET("/login")
-    fun login(): Call<UserResponse>
+    Call<UserResponse> login();
 
     @FormUrlEncoded
     @POST("/transfer")
@@ -51,4 +60,5 @@ interface Api {
         @Field("kode_akses") kode_akses: String?
     ): Call<AccountResponse>
 
+     */
 }

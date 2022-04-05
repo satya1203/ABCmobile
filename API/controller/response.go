@@ -3,7 +3,7 @@ package controller
 import (
 	"net/http"
 
-	"github.com/ABCmobile/model"
+	"github.com/ABCMobile/model"
 	"github.com/gin-gonic/gin"
 )
 

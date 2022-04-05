@@ -79,7 +79,7 @@
             android:id="@+id/btn_batal"
             android:layout_width="100dp"
             android:layout_height="40dp"
-            android:layout_marginright="20dp"
+            android:layout_marginRight="20dp"
             android:backgroundTint="#2866f3"
             android:text="Batal"></Button>
 

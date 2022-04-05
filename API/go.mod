@@ -1,4 +1,4 @@
-module github.com/ABCmobile
+module github.com/ABCMobile
 
 go 1.18
 

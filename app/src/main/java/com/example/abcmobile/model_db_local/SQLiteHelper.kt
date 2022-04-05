@@ -1,13 +1,9 @@
-package com.example.abcmobile
+package com.example.abcmobile.model_db_local
 
 import android.content.ContentValues
 import android.content.Context
 import android.database.sqlite.SQLiteDatabase
 import android.database.sqlite.SQLiteOpenHelper
-import com.example.abcmobile.model_db_local.NasabahModel
-import com.example.abcmobile.model_db_local.RekeningModel
-import com.example.abcmobile.model_db_local.TransferModel
-import com.example.abcmobile.model_db_local.VAModel
 
 class SQLiteHelper(context:Context) :
     SQLiteOpenHelper(context, DATABASE_NAME, null, DATABASE_VERSION) {

@@ -9,7 +9,7 @@ import (
 	"strconv"
 	"time"
 
-	"ABCmobile/API/model"
+	"github.com/ABCMobile/model"
 	"github.com/gin-gonic/gin"
 )
 
@@ -25,7 +25,7 @@ func Login(c *gin.Context) {
 		log.Println(err)
 	}
 
-	query := "SELECT kode_akses FROM user WHERE nomor_kartu = '" + accountData.NomorKartu + "' AND kode_akses = '" + string(accountData.KodeAkses) + "'"
+	query := "SELECT id, saldo, nomor_kartu, nomor_rekening, kode_akses FROM account WHERE nomor_kartu = '" + accountData.NomorKartu + "' AND kode_akses = '" + accountData.KodeAkses + "'"
 
 	rows, err := db.Query(query)
 	if err != nil {
@@ -45,11 +45,54 @@ func Login(c *gin.Context) {
 		response.Message = "Login Success"
 		sendLoginSuccessResponse(c, response)
 	} else {
-		response.Message = "Login Error"
+		response.Message = "Kode Akses Salah!"
 		fmt.Print(err)
 		sendLoginErrorResponse(c, response)
 	}
 
+}
+
+//Logout
+func Logout(c *gin.Context) {
+	resetUserToken(c)
+	var response model.UserResponse
+	response.Message = "Logout Success"
+	sendUserSuccessresponse(c, response)
+}
+
+//List Transfer
+func GetTransfer(c *gin.Context) {
+	db := connect()
+	defer db.Close()
+
+	query := "SELECT * FROM transfer"
+
+	rows, err := db.Query(query)
+	if err != nil {
+		log.Println(err)
+	}
+
+	var transfer model.Transfer
+	var transfers []model.Transfer
+
+	for rows.Next() {
+		if err := rows.Scan(&transfer.Id, &transfer.Jumlah, &transfer.Berita, &transfer.RekeningPengirim, &transfer.RekeningPenerima, &transfer.Waktu); err != nil {
+			log.Fatal(err.Error())
+		} else {
+			transfers = append(transfers, transfer)
+		}
+	}
+
+	var response model.TransferResponse
+	if err == nil {
+		response.Message = "Get Transfer Success"
+		response.Data = transfers
+		sendTransferSuccessresponse(c, response)
+	} else {
+		response.Message = "Get Transfer Error!"
+		sendTransferErrorResponse(c, response)
+		fmt.Print(err)
+	}
 }
 
 // Info Account
@@ -57,9 +100,9 @@ func GetInfoAccount(c *gin.Context) {
 	db := connect()
 	defer db.Close()
 
-	noKartu := c.PostForm("nomor_kartu")
+	noKartu := c.Param("nomor_kartu")
 
-	query := "SELECT a.saldo,a.nomor_rekening,u.nama FROM `account` a JOIN `user` u WHERE a.nomor_kartu='" + noKartu + "'"
+	query := "SELECT a.saldo, a.nomor_rekening, u.nama FROM `account` a JOIN `user` u ON a.user_fk = u.id WHERE a.nomor_kartu='" + noKartu + "'"
 
 	rows, err := db.Query(query)
 	if err != nil {
@@ -141,6 +184,7 @@ func InsertTransfer(c *gin.Context) {
 func GetSaldo(c *gin.Context, noRekening string) int {
 	db := connect()
 	defer db.Close()
+
 	if noRekening == "" {
 		noRekening = c.PostForm("nomor_rekening")
 	}
@@ -311,7 +355,7 @@ func UpdateKodeAkses(c *gin.Context) {
 	db := connect()
 	defer db.Close()
 
-	nomorRekening := c.PostForm("nomor_rekening")
+	nomorRekening := c.Param("nomor_rekening")
 	kodeAkses := c.PostForm("kode_akses")
 
 	_, errQuery := db.Exec("UPDATE account SET kode_akses = ? WHERE nomor_rekening=?",
