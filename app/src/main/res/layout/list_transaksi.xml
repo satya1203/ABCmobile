@@ -10,7 +10,7 @@
         android:id="@+id/tvTransferResponse"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="List Transaksi"
+        android:text="@string/listransaksi"
         android:textSize="24dp"
         android:textColor="@color/white"
         android:padding="10dp"

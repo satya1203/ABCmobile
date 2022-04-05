@@ -20,12 +20,12 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
-            android:id="@+id/textView6"
+            android:id="@+id/judul"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="150dp"
             android:layout_marginTop="10dp"
-            android:text="m-Transfer"
+            android:text="@string/mtransfer"
             android:textAlignment="center"
             android:textColor="@color/white"
             android:textSize="24dp" />
@@ -37,7 +37,7 @@
             android:layout_marginLeft="40dp"
             android:layout_marginTop="7dp"
             android:backgroundTint="#2866f3"
-            android:text="Send" />
+            android:text="@string/send" />
 
     </LinearLayout>
 
@@ -65,7 +65,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="60dp"
-                android:text="Mobile Payment"
+                android:text="@string/mobilepayment"
                 android:textColor="#2866f3"
                 android:textSize="24dp"
                 android:gravity="center"/>
@@ -88,7 +88,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="5dp"
-                    android:text="Transfer"
+                    android:text="@string/Transfer"
                     android:textColor="@color/white"
                     android:textStyle="bold" />
 
@@ -116,7 +116,7 @@
                             android:id="@+id/textView9"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="No. Virtual Account"
+                            android:text="@string/novA"
                             android:textColor="#2866f3"
                             android:textSize="18dp"
                             android:textStyle="bold"

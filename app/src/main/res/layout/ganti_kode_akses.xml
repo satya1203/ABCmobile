@@ -7,30 +7,30 @@
     android:background="#163d97">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/judul"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="110dp"
         android:layout_marginTop="45dp"
         android:layout_marginEnd="102dp"
         android:layout_marginBottom="47dp"
-        android:text="ABC"
+        android:text="@string/ABC"
         android:textColor="@color/white"
         android:textSize="48sp"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout"
-        app:layout_constraintEnd_toEndOf="@+id/textView3"
+        app:layout_constraintEnd_toEndOf="@+id/judul2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/judul2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="106dp"
-        android:text="mobile"
+        android:text="@string/mobile"
         android:textColor="@color/white"
         android:textSize="34sp"
-        app:layout_constraintBottom_toBottomOf="@+id/textView"
+        app:layout_constraintBottom_toBottomOf="@+id/judul"
         app:layout_constraintEnd_toEndOf="parent" />
 
     <LinearLayout
@@ -45,7 +45,7 @@
         app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView">
+        app:layout_constraintTop_toBottomOf="@+id/judul">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -53,23 +53,23 @@
             android:orientation="horizontal">
 
             <TextView
-                android:id="@+id/textView9"
+                android:id="@+id/tv_kode_akses_saat_ini"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="15dp"
-                android:text="Kode Akses Saat ini"
+                android:text="@string/kodeaksessaatini"
                 android:textColor="#2866f3"
                 android:textSize="18dp"
                 android:textStyle="bold" />
 
             <EditText
-                android:id="@+id/et_akses_lama"
+                android:id="@+id/et_kode_akses_saat_ini"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="30dp"
                 android:layout_marginTop="10dp"
-                android:text="Input 6 alphanum"
+                android:text="@string/input6alphanum"
                 android:textColor="#686868" />
 
         </LinearLayout>
@@ -80,23 +80,23 @@
             android:orientation="horizontal">
 
             <TextView
-                android:id="@+id/textView10"
+                android:id="@+id/tv_kode_akses_yang_baru"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="15dp"
-                android:text="Kode Akses Yang Baru"
+                android:text="@string/kodeaksesyangbaru"
                 android:textColor="#2866f3"
                 android:textSize="18dp"
                 android:textStyle="bold" />
 
             <EditText
-                android:id="@+id/et_akses_baru"
+                android:id="@+id/et_kode_akses_yang_baru"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="12dp"
-                android:text="Input 6 alphanum"
+                android:text="@string/input6alphanum"
                 android:textColor="#686868" />
 
         </LinearLayout>
@@ -107,18 +107,18 @@
             android:orientation="horizontal">
 
             <TextView
-                android:id="@+id/textView11"
+                android:id="@+id/tv_konfirmasi_kode_akses_yang_baru"
                 android:layout_width="180dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="15dp"
-                android:text="Konfirmasi Kode Akses Yang Baru"
+                android:text="@string/konfirmasikodeaksesyangbaru"
                 android:textColor="#2866f3"
                 android:textSize="18dp"
                 android:textStyle="bold" />
 
             <EditText
-                android:id="@+id/et_konfirmasi_akses_baru"
+                android:id="@+id/et_konfirmasi_kode_akses_yang_baru"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
@@ -151,7 +151,7 @@
             android:layout_marginLeft="40dp"
             android:layout_marginTop="30dp"
             android:backgroundTint="#2866f3"
-            android:text="Cancel"></Button>
+            android:text="@string/cancel"></Button>
 
         <Button
             android:id="@+id/btn_ok"
@@ -160,7 +160,7 @@
             android:layout_marginLeft="35dp"
             android:layout_marginTop="30dp"
             android:backgroundTint="#2866f3"
-            android:text="Ok"></Button>
+            android:text="@string/ok"></Button>
 
     </LinearLayout>
 

@@ -22,14 +22,14 @@
             android:id="@+id/tv_jumlah"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Jumlah"
+            android:text="@string/jumlah"
             android:textSize="18dp"/>
 
         <TextView
             android:id="@+id/tv_berita"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Berita"
+            android:text="@string/berita"
             android:textSize="18dp"
             android:maxLines="2"/>
 
@@ -37,21 +37,21 @@
             android:id="@+id/tv_pengirim"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Rek.Pengirim"
+            android:text="@string/rekeningpengirim"
             android:textSize="18dp"/>
 
         <TextView
             android:id="@+id/tv_penerima"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Rek.Penerima"
+            android:text="@string/rekeningpenerima"
             android:textSize="18dp"/>
 
         <TextView
             android:id="@+id/tv_waktu"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Waktu"
+            android:text="@string/waktu"
             android:textSize="18dp"/>
     </LinearLayout>
 
