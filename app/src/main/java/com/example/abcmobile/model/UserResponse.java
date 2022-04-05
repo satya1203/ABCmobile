@@ -1,5 +1,24 @@
 package com.example.abcmobile.model;
 
-public class UserResponse {
+import java.util.List;
 
+public class UserResponse {
+    private String message;
+    private List<TransferModel> data;
+
+    public String getMessage() {
+        return message;
+    }
+
+    public void setMessage(String message) {
+        this.message = message;
+    }
+
+    public List<TransferModel> getData() {
+        return data;
+    }
+
+    public void setData(List<TransferModel> data) {
+        this.data = data;
+    }
 }

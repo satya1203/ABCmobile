@@ -21,7 +21,7 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
-public class ListTransferActivity extends AppCompatActivity {
+public class ListTransfer extends AppCompatActivity {
     private RecyclerView rvData;
     private RecyclerView.Adapter adData;
     private RecyclerView.LayoutManager lmData;
@@ -48,18 +48,18 @@ public class ListTransferActivity extends AppCompatActivity {
             public void onResponse(Call<TransferResponse> call, Response<TransferResponse> response) {
                 String message = response.body().getMessage();
 
-                Toast.makeText(ListTransferActivity.this, "Message : "+message, Toast.LENGTH_SHORT).show();
+                Toast.makeText(ListTransfer.this, "Message : "+message, Toast.LENGTH_SHORT).show();
 
                 listTransfer = response.body().getData();
 
-                adData = new TransferAdapter(ListTransferActivity.this, listTransfer);
+                adData = new TransferAdapter(ListTransfer.this, listTransfer);
                 rvData.setAdapter(adData);
                 adData.notifyDataSetChanged();
             }
 
             @Override
             public void onFailure(Call<TransferResponse> call, Throwable t) {
-                Toast.makeText(ListTransferActivity.this, "Server Failed" + t.getMessage(), Toast.LENGTH_SHORT).show();
+                Toast.makeText(ListTransfer.this, "Server Failed" + t.getMessage(), Toast.LENGTH_SHORT).show();
             }
         });
     }

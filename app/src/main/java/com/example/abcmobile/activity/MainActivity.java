@@ -24,6 +24,11 @@ import retrofit2.Response;
 
 public class MainActivity extends AppCompatActivity {
 
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+    }
     //private val list = ArrayList<AccountResponse>()
 
     //showInfoAccount()
