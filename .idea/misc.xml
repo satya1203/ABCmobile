@@ -33,7 +33,13 @@
         <entry key="..\:/Users/CalvinJS/AndroidStudioProjects/ABCMobile/app/src/main/res/layout/transaksi_post.xml" value="0.23854166666666668" />
         <entry key="..\:/Users/CalvinJS/AndroidStudioProjects/ABCMobile/app/src/main/res/layout/transfer_post.xml" value="0.25" />
         <entry key="..\:/Users/CalvinJS/AndroidStudioProjects/ABCMobile/app/src/main/res/menu/navbar.xml" value="0.25625" />
+        <entry key="..\:/Users/chris/AndroidStudioProjects/ABCMobile/app/src/main/res/drawable/round_rectangle.xml" value="0.133" />
+        <entry key="..\:/Users/chris/AndroidStudioProjects/ABCMobile/app/src/main/res/drawable/round_rectangle_blue.xml" value="0.133" />
+        <entry key="..\:/Users/chris/AndroidStudioProjects/ABCMobile/app/src/main/res/drawable/round_rectangle_dark_blue.xml" value="0.133" />
+        <entry key="..\:/Users/chris/AndroidStudioProjects/ABCMobile/app/src/main/res/layout/activity_buka_rekening_baru.xml" value="0.26875" />
+        <entry key="..\:/Users/chris/AndroidStudioProjects/ABCMobile/app/src/main/res/layout/activity_mabc.xml" value="0.26875" />
         <entry key="..\:/Users/chris/AndroidStudioProjects/ABCMobile/app/src/main/res/layout/activity_main.xml" value="0.26222826086956524" />
+        <entry key="..\:/Users/chris/AndroidStudioProjects/ABCMobile/app/src/main/res/layout/activity_test.xml" value="0.26875" />
         <entry key="..\:/Users/chris/AndroidStudioProjects/ABCMobile/app/src/main/res/layout/berhasil.xml" value="0.26222826086956524" />
         <entry key="..\:/Users/chris/AndroidStudioProjects/ABCMobile/app/src/main/res/layout/buka_rekening_baru.xml" value="0.25" />
         <entry key="..\:/Users/chris/AndroidStudioProjects/ABCMobile/app/src/main/res/layout/gagal.xml" value="0.26222826086956524" />
@@ -42,10 +48,10 @@
         <entry key="..\:/Users/chris/AndroidStudioProjects/ABCMobile/app/src/main/res/layout/input_kode_akses.xml" value="0.33" />
         <entry key="..\:/Users/chris/AndroidStudioProjects/ABCMobile/app/src/main/res/layout/konfirmasi.xml" value="0.26222826086956524" />
         <entry key="..\:/Users/chris/AndroidStudioProjects/ABCMobile/app/src/main/res/layout/list_transaksi.xml" value="0.26875" />
-        <entry key="..\:/Users/chris/AndroidStudioProjects/ABCMobile/app/src/main/res/layout/m_abc.xml" value="0.26222826086956524" />
+        <entry key="..\:/Users/chris/AndroidStudioProjects/ABCMobile/app/src/main/res/layout/m_abc.xml" value="0.25" />
         <entry key="..\:/Users/chris/AndroidStudioProjects/ABCMobile/app/src/main/res/layout/m_info.xml" value="0.26222826086956524" />
         <entry key="..\:/Users/chris/AndroidStudioProjects/ABCMobile/app/src/main/res/layout/m_payment.xml" value="0.26222826086956524" />
-        <entry key="..\:/Users/chris/AndroidStudioProjects/ABCMobile/app/src/main/res/layout/m_transfer.xml" value="0.33" />
+        <entry key="..\:/Users/chris/AndroidStudioProjects/ABCMobile/app/src/main/res/layout/m_transfer.xml" value="0.25" />
         <entry key="..\:/Users/chris/AndroidStudioProjects/ABCMobile/app/src/main/res/layout/test.xml" value="0.26875" />
         <entry key="..\:/Users/chris/AndroidStudioProjects/ABCMobile/app/src/main/res/layout/transfer_post.xml" value="0.26875" />
         <entry key="..\:/Users/chris/AndroidStudioProjects/ABCMobile/app/src/main/res/layout/tset.xml" value="0.26222826086956524" />
