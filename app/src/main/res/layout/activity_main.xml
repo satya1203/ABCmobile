@@ -31,7 +31,7 @@
         android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="@+id/judul"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/judul" />
+        app:layout_constraintStart_toEndOf="@+id/judul"/>
 
     <Button
         android:id="@+id/mabc"

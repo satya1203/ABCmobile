@@ -2,8 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.abcmobile">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
-
+    <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
@@ -14,6 +13,45 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ABCMobile">
+        <activity
+            android:name=".activity.Berhasil"
+            android:exported="false" />
+        <activity
+            android:name=".activity.Gagal"
+            android:exported="false" />
+        <activity
+            android:name=".activity.Login"
+            android:exported="false" />
+        <activity
+            android:name=".activity.Konfirmasi"
+            android:exported="false" />
+        <activity
+            android:name=".activity.GantiKodeAkses"
+            android:exported="false" />
+        <activity
+            android:name=".activity.MPayment"
+            android:exported="false" />
+        <activity
+            android:name=".activity.MTransfer"
+            android:exported="false" />
+        <activity
+            android:name=".activity.InfoSaldo"
+            android:exported="false" />
+        <activity
+            android:name=".activity.MInfo"
+            android:exported="false" />
+        <activity
+            android:name=".activity.MABC"
+            android:exported="false" />
+        <activity
+            android:name=".activity.BukaRekeningBaru"
+            android:exported="false" />
+        <activity
+            android:name=".activity.m_payment"
+            android:exported="false" />
+        <activity
+            android:name=".activity.test"
+            android:exported="false" />
         <activity
             android:name=".activity.MainActivity"
             android:exported="true">
