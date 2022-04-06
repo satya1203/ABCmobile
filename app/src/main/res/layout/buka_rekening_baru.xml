@@ -7,66 +7,66 @@
     android:background="#163d97">
 
     <LinearLayout
-        android:id="@+id/linearLayout5"
+        android:id="@+id/action_bar_rekening_baru"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:layout_marginTop="1dp"
         android:layout_marginBottom="25dp"
         android:background="#686868"
         android:orientation="horizontal"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintBottom_toTopOf="@+id/input_data"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
-            android:id="@+id/textView6"
+            android:id="@+id/text_mtransfer"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="150dp"
             android:layout_marginTop="10dp"
-            android:text="m-Transfer"
+            android:text="@string/mtransfer"
             android:textAlignment="center"
             android:textColor="@color/white"
             android:textSize="24dp" />
 
         <Button
-            android:id="@+id/button5"
+            android:id="@+id/button_send_rekening_baru"
             android:layout_width="75dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="50dp"
             android:layout_marginTop="7dp"
             android:backgroundTint="#2866f3"
-            android:text="Send" />
+            android:text="@string/send" />
 
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/linearLayout"
+        android:id="@+id/input_data"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginEnd="30dp"
-        android:layout_marginBottom="30dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginBottom="1dp"
         android:background="@drawable/round_rectangle"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout5">
+        app:layout_constraintTop_toBottomOf="@+id/action_bar_rekening_baru">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="132dp"
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/textView7"
+                android:id="@+id/mobilepayment"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:padding="20dp"
+                android:layout_marginTop="60dp"
                 android:gravity="center"
-                android:text="Mobile Payment"
+                android:text="@string/mobilepayment"
                 android:textColor="#2866f3"
                 android:textSize="24dp" />
 
@@ -74,7 +74,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:orientation="vertical">
 
             <LinearLayout
@@ -88,7 +88,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="5dp"
-                    android:text="Transfer"
+                    android:text="@string/Transfer"
                     android:textColor="@color/white"
                     android:textStyle="bold" />
 
@@ -113,10 +113,10 @@
                         android:layout_marginTop="3dp">
 
                         <TextView
-                            android:id="@+id/tv_nama_ktp"
+                            android:id="@+id/nama_sesuai_ktp"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Nama Sesuai KTP"
+                            android:text="@string/namasesuaiktp"
                             android:textColor="#2866f3"
                             android:textSize="18dp"
                             android:textStyle="bold"
@@ -124,9 +124,8 @@
                             android:layout_marginTop="7dp" />
 
                         <EditText
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="63dp"
+                            android:layout_width="150dp"
+                            android:layout_height="match_parent"
                             android:background="@null"
                             android:gravity="right"
                             android:hint="@string/input" />
@@ -154,7 +153,7 @@
                         android:layout_marginTop="3dp">
 
                         <TextView
-                            android:id="@+id/tv_ttl"
+                            android:id="@+id/ttl"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Tempat/Tgl Lahir"
@@ -165,132 +164,8 @@
                             android:layout_marginTop="7dp" />
 
                         <EditText
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:background="@null"
-                            android:layout_marginLeft="70dp"
-                            android:gravity="right"
-                            android:hint="@string/input" />
-                    </TableRow>
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="2dp"
-                        android:layout_marginLeft="15dp"
-                        android:layout_marginTop="5dp"
-                        android:layout_marginRight="15dp"
-                        android:background="#c0c0c0" />
-                </TableLayout>
-
-                <TableLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:paddingLeft="13dp"
-                    android:paddingRight="13dp">
-
-                    <TableRow
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:minHeight="40dp"
-                        android:layout_marginBottom="3dp"
-                        android:layout_marginTop="3dp">
-
-                        <TextView
-                            android:id="@+id/tv_jenis_kelamin"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Jenis Kelamin"
-                            android:textColor="#2866f3"
-                            android:textSize="18dp"
-                            android:textStyle="bold"
-                            android:layout_marginLeft="15dp"
-                            android:layout_marginTop="7dp" />
-
-                        <EditText
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:background="@null"
-                            android:layout_marginLeft="95dp"
-                            android:gravity="right"
-                            android:hint="@string/input" />
-                    </TableRow>
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="2dp"
-                        android:layout_marginLeft="15dp"
-                        android:layout_marginTop="5dp"
-                        android:layout_marginRight="15dp"
-                        android:background="#c0c0c0" />
-                </TableLayout>
-
-                <TableLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:paddingLeft="13dp"
-                    android:paddingRight="13dp">
-
-                    <TableRow
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:minHeight="40dp"
-                        android:layout_marginBottom="3dp"
-                        android:layout_marginTop="3dp">
-
-                        <TextView
-                            android:id="@+id/tv_alamat"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Alamat"
-                            android:textColor="#2866f3"
-                            android:textSize="18dp"
-                            android:textStyle="bold"
-                            android:layout_marginLeft="15dp"
-                            android:layout_marginTop="7dp" />
-
-                        <EditText
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:background="@null"
-                            android:layout_marginLeft="150dp"
-                            android:gravity="right"
-                            android:hint="@string/input" />
-                    </TableRow>
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="2dp"
-                        android:layout_marginLeft="15dp"
-                        android:layout_marginTop="5dp"
-                        android:layout_marginRight="15dp"
-                        android:background="#c0c0c0" />
-                </TableLayout>
-
-                <TableLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:paddingLeft="13dp"
-                    android:paddingRight="13dp">
-
-                    <TableRow
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:minHeight="40dp"
-                        android:layout_marginBottom="3dp"
-                        android:layout_marginTop="3dp">
-
-                        <TextView
-                            android:id="@+id/tv_status_kawin"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Status Perkawinan"
-                            android:textColor="#2866f3"
-                            android:textSize="18dp"
-                            android:textStyle="bold"
-                            android:layout_marginLeft="15dp"
-                            android:layout_marginTop="7dp" />
-
-                        <EditText
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="57dp"
+                            android:layout_width="156dp"
+                            android:layout_height="match_parent"
                             android:background="@null"
                             android:gravity="right"
                             android:hint="@string/input" />
@@ -318,10 +193,10 @@
                         android:layout_marginTop="3dp">
 
                         <TextView
-                            android:id="@+id/tv_pekerjaan"
+                            android:id="@+id/jenis_kelamin"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Pekerjaan"
+                            android:text="@string/jeniskelamin"
                             android:textColor="#2866f3"
                             android:textSize="18dp"
                             android:textStyle="bold"
@@ -329,10 +204,130 @@
                             android:layout_marginTop="7dp" />
 
                         <EditText
+                            android:layout_width="183dp"
+                            android:layout_height="match_parent"
+                            android:background="@null"
+                            android:gravity="right"
+                            android:hint="@string/input" />
+                    </TableRow>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="15dp"
+                        android:background="#c0c0c0" />
+                </TableLayout>
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="13dp"
+                    android:paddingRight="13dp">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="40dp"
+                        android:layout_marginBottom="3dp"
+                        android:layout_marginTop="3dp">
+
+                        <TextView
+                            android:id="@+id/alamat"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:text="@string/alamat"
+                            android:textColor="#2866f3"
+                            android:textSize="18dp"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="7dp" />
+
+                        <EditText
+                            android:layout_width="234dp"
+                            android:layout_height="match_parent"
+
                             android:background="@null"
-                            android:layout_marginLeft="125dp"
+                            android:gravity="right"
+                            android:hint="@string/input" />
+                    </TableRow>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="15dp"
+                        android:background="#c0c0c0" />
+                </TableLayout>
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="13dp"
+                    android:paddingRight="13dp">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="40dp"
+                        android:layout_marginBottom="3dp"
+                        android:layout_marginTop="3dp">
+
+                        <TextView
+                            android:id="@+id/status_perkawinan"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/statusperkawinan"
+                            android:textColor="#2866f3"
+                            android:textSize="18dp"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="7dp" />
+
+                        <EditText
+                            android:layout_width="145dp"
+                            android:layout_height="match_parent"
+                            android:background="@null"
+                            android:gravity="right"
+                            android:hint="@string/input" />
+                    </TableRow>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="15dp"
+                        android:background="#c0c0c0" />
+                </TableLayout>
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="13dp"
+                    android:paddingRight="13dp">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="40dp"
+                        android:layout_marginBottom="3dp"
+                        android:layout_marginTop="3dp">
+
+                        <TextView
+                            android:id="@+id/pekerjaan"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/pekerjaan"
+                            android:textColor="#2866f3"
+                            android:textSize="18dp"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="7dp" />
+
+                        <EditText
+                            android:layout_width="213dp"
+                            android:layout_height="match_parent"
+                            android:background="@null"
                             android:gravity="right"
                             android:hint="@string/input" />
                     </TableRow>
@@ -359,10 +354,10 @@
                         android:layout_marginTop="3dp">
 
                         <TextView
-                            android:id="@+id/tv_kewarganegaraan"
+                            android:id="@+id/kewarganegaraan"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Kewarganegaraan"
+                            android:text="@string/Kewarganegaraan"
                             android:textColor="#2866f3"
                             android:textSize="18dp"
                             android:textStyle="bold"
@@ -370,50 +365,8 @@
                             android:layout_marginTop="7dp" />
 
                         <EditText
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:background="@null"
-                            android:layout_marginLeft="60dp"
-                            android:gravity="right"
-                            android:hint="@string/input" />
-                    </TableRow>
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="2dp"
-                        android:layout_marginLeft="15dp"
-                        android:layout_marginTop="5dp"
-                        android:layout_marginRight="15dp"
-                        android:background="#c0c0c0" />
-                </TableLayout>
-
-                <TableLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:paddingLeft="13dp"
-                    android:paddingRight="13dp">
-
-                    <TableRow
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:minHeight="40dp"
-                        android:layout_marginBottom="3dp"
-                        android:layout_marginTop="3dp">
-
-                        <TextView
-                            android:id="@+id/tv_hp"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="No. HP"
-                            android:textColor="#2866f3"
-                            android:textSize="18dp"
-                            android:textStyle="bold"
-                            android:layout_marginLeft="15dp"
-                            android:layout_marginTop="7dp" />
-
-                        <EditText
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="145dp"
+                            android:layout_width="150dp"
+                            android:layout_height="match_parent"
                             android:background="@null"
                             android:gravity="right"
                             android:hint="@string/input" />
@@ -441,10 +394,10 @@
                         android:layout_marginTop="3dp">
 
                         <TextView
-                            android:id="@+id/tv_kode"
+                            android:id="@+id/nohp"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Kode Akses"
+                            android:text="@string/nohp"
                             android:textColor="#2866f3"
                             android:textSize="18dp"
                             android:textStyle="bold"
@@ -452,10 +405,49 @@
                             android:layout_marginTop="7dp" />
 
                         <EditText
+                            android:layout_width="238dp"
+                            android:layout_height="match_parent"
+                            android:background="@null"
+                            android:gravity="right"
+                            android:hint="@string/input" />
+                    </TableRow>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="15dp"
+                        android:background="#c0c0c0" />
+                </TableLayout>
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="13dp"
+                    android:paddingRight="13dp">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="40dp"
+                        android:layout_marginBottom="3dp"
+                        android:layout_marginTop="3dp">
+
+                        <TextView
+                            android:id="@+id/kode_akses"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:text="@string/kodeakses"
+                            android:textColor="#2866f3"
+                            android:textSize="18dp"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="7dp" />
+
+                        <EditText
+                            android:layout_width="196dp"
+                            android:layout_height="match_parent"
                             android:background="@null"
-                            android:layout_marginLeft="105dp"
                             android:gravity="right"
                             android:hint="@string/input" />
                     </TableRow>

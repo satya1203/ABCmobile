@@ -7,73 +7,73 @@
     android:background="#163d97">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/judul"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="3dp"
         android:layout_marginTop="45dp"
         android:layout_marginBottom="48dp"
-        android:text="ABC"
+        android:text="@string/ABC"
         android:textColor="@color/white"
         android:textSize="48sp"
-        app:layout_constraintBottom_toTopOf="@+id/button"
-        app:layout_constraintEnd_toStartOf="@+id/textView3"
+        app:layout_constraintBottom_toTopOf="@+id/mabc"
+        app:layout_constraintEnd_toStartOf="@+id/judul2"
         app:layout_constraintHorizontal_chainStyle="packed"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/judul2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="mobile"
+        android:text="@string/mobile"
         android:textColor="@color/white"
         android:textSize="34sp"
-        app:layout_constraintBottom_toBottomOf="@+id/textView"
+        app:layout_constraintBottom_toBottomOf="@+id/judul"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/textView" />
+        app:layout_constraintStart_toEndOf="@+id/judul" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/mabc"
         android:layout_width="181dp"
         android:layout_height="0dp"
         android:layout_marginBottom="28dp"
         android:backgroundTint="#163d97"
-        android:text="m-ABC"
+        android:text="@string/mabc"
         app:iconTint="#E60F0F"
-        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintBottom_toTopOf="@+id/bukarekeningbaru"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/judul"
         app:strokeColor="@color/white"
         app:strokeWidth="2dp" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/bukarekeningbaru"
         android:layout_width="210dp"
         android:layout_height="0dp"
         android:layout_marginBottom="27dp"
         android:backgroundTint="#2866f3"
-        android:text="Buka Rekening Baru"
-        app:layout_constraintBottom_toTopOf="@+id/button3"
+        android:text="@string/bukarekeningbaru"
+        app:layout_constraintBottom_toTopOf="@+id/gantikodekases"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button" />
+        app:layout_constraintTop_toBottomOf="@+id/mabc" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/gantikodekases"
         android:layout_width="210dp"
         android:layout_height="0dp"
         android:layout_marginBottom="260dp"
         android:backgroundTint="#2866f3"
-        android:text="Ganti Kode Akses"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        android:text="@string/gantikodeakses"
+        app:layout_constraintBottom_toTopOf="@+id/selamatdatangdiabcmobile"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button2" />
+        app:layout_constraintTop_toBottomOf="@+id/bukarekeningbaru" />
 
     <LinearLayout
-        android:id="@+id/linearLayout2"
+        android:id="@+id/selamatdatangdiabcmobile"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:background="#686868"
@@ -82,13 +82,13 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button3">
+        app:layout_constraintTop_toBottomOf="@+id/gantikodekases">
 
         <TextView
             android:id="@+id/textView2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Selamat Datang di ABC Mobile"
+            android:text="@string/selamatdatangdiabcmobile"
             android:textAlignment="center"
             android:textColor="@color/white"
             android:textSize="24sp" />
