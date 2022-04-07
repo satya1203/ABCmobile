@@ -4,21 +4,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#163d97">
+    android:background="#163d97"
+    tools:context=".activity.M_ABC">
 
     <TextView
         android:id="@+id/judul"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="110dp"
+        android:layout_marginStart="3dp"
         android:layout_marginTop="45dp"
-        android:layout_marginEnd="102dp"
-        android:layout_marginBottom="22dp"
+        android:layout_marginBottom="48dp"
         android:text="@string/ABC"
         android:textColor="@color/white"
         android:textSize="48sp"
         app:layout_constraintBottom_toTopOf="@+id/judul3"
-        app:layout_constraintEnd_toEndOf="@+id/judul2"
+        app:layout_constraintEnd_toStartOf="@+id/judul2"
+        app:layout_constraintHorizontal_chainStyle="packed"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -26,12 +27,12 @@
         android:id="@+id/judul2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="18dp"
         android:text="@string/mobile"
         android:textColor="@color/white"
         android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="@+id/judul"
-        app:layout_constraintStart_toStartOf="@+id/textView12" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/judul" />
 
     <TextView
         android:id="@+id/judul3"
@@ -53,6 +54,7 @@
         android:text="USER"
         android:textColor="@color/white"
         android:textSize="18sp"
+        android:textAlignment="center"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout8"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -76,6 +78,7 @@
             android:orientation="vertical">
 
             <ImageView
+                android:id="@+id/iv_minfo"
                 android:layout_width="75dp"
                 android:layout_height="75dp"
                 android:scaleType="fitXY"
@@ -97,6 +100,7 @@
             android:orientation="vertical">
 
             <ImageView
+                android:id="@+id/iv_mtransfer"
                 android:layout_width="75dp"
                 android:layout_height="75dp"
                 android:src="@drawable/ic_baseline_transform_24"></ImageView>
@@ -130,6 +134,7 @@
             android:orientation="vertical">
 
             <ImageView
+                android:id="@+id/iv_mpayment"
                 android:layout_width="75dp"
                 android:layout_height="75dp"
                 android:src="@drawable/ic_baseline_attach_money_24"></ImageView>
@@ -150,6 +155,7 @@
             android:orientation="vertical">
 
             <ImageView
+                android:id="@+id/iv_exit"
                 android:layout_width="75dp"
                 android:layout_height="75dp"
                 android:src="@drawable/ic_baseline_exit_to_app_24"></ImageView>
@@ -168,12 +174,12 @@
         android:id="@+id/bottom_navigation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/black"
+        android:background="#686868"
         app:itemIconTint="@color/white"
         app:itemTextColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:menu="@menu/navbar" />
+        app:menu="@menu/navbar"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

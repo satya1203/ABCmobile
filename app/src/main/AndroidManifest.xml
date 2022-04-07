@@ -14,6 +14,20 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ABCMobile">
+        <activity android:name=".activity.Login"
+            android:parentActivityName=".activity.MainActivity"></activity>
+        <activity android:name=".activity.InsertRekening"
+            android:parentActivityName=".activity.MainActivity"></activity>
+        <activity android:name=".activity.UpdateKodeAkses"
+            android:parentActivityName=".activity.MainActivity"></activity>
+        <activity android:name=".activity.M_ABC"
+            android:parentActivityName=".activity.MainActivity"></activity>
+        <activity android:name=".activity.M_Info"
+            android:parentActivityName=".activity.M_ABC"></activity>
+        <activity android:name=".activity.InsertTransfer"
+            android:parentActivityName=".activity.M_ABC"></activity>
+        <activity android:name=".activity.InsertVirtualAccount"
+            android:parentActivityName=".activity.M_ABC"></activity>
         <activity
             android:name=".activity.MainActivity"
             android:exported="true">

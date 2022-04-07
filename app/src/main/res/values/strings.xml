@@ -46,7 +46,7 @@
     <string name="infosaldo">Info Saldo</string>
     <string name="novA">No. Virtual Account</string>
     <string name="antarrekening">Antar Rekening</string>
-    <string name="norektujuan">no. Rekening TUjuan</string>
-    <string name="jumlahuangrp">Jumlah Uang Rp.</string>
+    <string name="norektujuan">No. Rekening Tujuan</string>
+    <string name="jumlahuangrp">Jumlah Uang (Rp.)</string>
     <string name="Transfer">Transfer</string>
 </resources>
