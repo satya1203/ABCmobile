@@ -40,7 +40,7 @@ public class InfoAccount extends AppCompatActivity {
     public void getData() {
         String nokartu = "123456789";
         AsyncHttpClient client = new AsyncHttpClient();
-        client.get("http://192.168.1.14:8080/infoaccount/" + nokartu, new JsonHttpResponseHandler(){
+        client.get("http://192.168.1.10:8080/infoaccount/" + nokartu, new JsonHttpResponseHandler(){
             @Override
             public void onSuccess(int statusCode, Header[] headers, JSONObject response) {
                 try{

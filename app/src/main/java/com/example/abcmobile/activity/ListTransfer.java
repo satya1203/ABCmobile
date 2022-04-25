@@ -39,6 +39,7 @@ import retrofit2.Callback;
 import retrofit2.Response;
 
 public class ListTransfer extends Fragment {
+
     private RecyclerView rvData;
     private RecyclerView.Adapter adData;
     private RecyclerView.LayoutManager lmData;
@@ -63,7 +64,7 @@ public class ListTransfer extends Fragment {
 
     public void retrieveData() {
         AsyncHttpClient client = new AsyncHttpClient();
-        client.get("http://192.168.1.14:8080/listTransfer", new JsonHttpResponseHandler() {
+        client.get("http://192.168.1.10:8080/listTransfer", new JsonHttpResponseHandler() {
             @Override
             public void onSuccess(int statusCode, Header[] headers, JSONObject response) {
                 try {

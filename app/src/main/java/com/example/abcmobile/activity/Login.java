@@ -22,11 +22,11 @@ import retrofit2.Callback;
 import retrofit2.Response;
 
 public class Login extends AppCompatActivity {
+
     private EditText et_nokartu, et_kodeakses;
-    private Button btn_cancel;
-    private Button btn_login;
+    private Button btn_login, btn_cancel;
     private String nokartu, kodeakses;
-    AccountModel am;
+    //AccountModel am = new AccountModel();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,7 +38,7 @@ public class Login extends AppCompatActivity {
         btn_cancel = findViewById(R.id.btn_cancel_login);
         btn_login = findViewById(R.id.btn_login);
 
-        am.setNomorKartu(et_nokartu.getText().toString());
+        //am.setNomorKartu(et_nokartu.getText().toString());
 
         btn_cancel.setOnClickListener(new View.OnClickListener() {
             @Override

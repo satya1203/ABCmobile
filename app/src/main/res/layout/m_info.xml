@@ -22,7 +22,7 @@
 
         <TextView
             android:id="@+id/action_bar"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="m-Info"
             android:textAlignment="center"
@@ -51,7 +51,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="20dp"
             android:text="@string/infosaldo"
             android:textColor="#2866f3"
             android:textSize="18sp"

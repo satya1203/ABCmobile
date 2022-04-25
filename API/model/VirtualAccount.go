@@ -2,7 +2,7 @@ package model
 
 import "time"
 
-type NoVirtualAccount struct {
+type VirtualAccount struct {
 	Id       int       `form:"id" json:"id"`
 	Transfer Transfer  `form:"transaksi" json:"transaksi"`
 	NoVA     string    `form:"nomor_va" json:"nomor_va"`
@@ -12,7 +12,7 @@ type NoVirtualAccount struct {
 	Status   int       `form:"status" json:"status"`
 }
 
-type NoVirtualAccountResponse struct {
+type VirtualAccountResponse struct {
 	Message string             `form:"message" json:"message"`
-	Data    []NoVirtualAccount `form:"data" json:"data"`
+	Data    []VirtualAccount `form:"data" json:"data"`
 }

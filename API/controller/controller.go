@@ -236,7 +236,7 @@ func InsertVirtualAccount(c *gin.Context) {
 	db := connect()
 	defer db.Close()
 
-	var va model.NoVirtualAccount
+	var va model.VirtualAccount
 	var account model.Account
 
 	va.Transfer.RekeningPengirim = c.PostForm("rekening_pengirim")

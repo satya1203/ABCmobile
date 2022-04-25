@@ -21,8 +21,7 @@ import retrofit2.Response;
 
 public class UpdateKodeAkses extends AppCompatActivity {
 
-    private Button btn_ok;
-    private Button btn_cancel;
+    private Button btn_ok, btn_cancel;
     private String yKodeAkses, yNomorRekening, yKodeAksesCek;
     private EditText et_no_rek, et_kodeAksesBaru, et_kodeAksesBaruConfirm;
 

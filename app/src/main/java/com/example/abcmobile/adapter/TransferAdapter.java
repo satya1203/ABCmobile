@@ -18,6 +18,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class TransferAdapter extends RecyclerView.Adapter<TransferAdapter.HolderData> {
+
     private Context ctx;
     private List<TransferModel> listTransfer;
 

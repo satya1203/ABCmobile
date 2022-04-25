@@ -18,15 +18,6 @@ public class BottomNav extends AppCompatActivity {
         setContentView(R.layout.bottom_nav);
 
         BottomNavigationView navView = findViewById(R.id.bottom_navigation);
-//        NavController navController = Navigation.findNavController(this,R.id.bottom_navigation);
-
-//        List<Integer> list = Arrays.asList(R.id.navigation_home, R.id.navigation_dashboard);
-//        Set<Integer> set = new HashSet(Arrays.asList(R.id.navigation_home, R.id.navigation_dashboard));
-//        AppBarConfiguration AppBarConfiguration = new AppBarConfiguration.Builder(navController.getGraph()).build();
-
-//        AppBarConfiguration appBarConfiguration = new AppBarConfiguration.Builder(R.id.navigation_home, R.id.navigation_transaction).build();
-//        NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
-//        NavigationUI.setupWithNavController(navView, navController);
 
         final NavHostFragment navHostFragment = (NavHostFragment) getSupportFragmentManager().findFragmentById(R.id.nav_host_fragment);
         final NavController navController = navHostFragment.getNavController();
