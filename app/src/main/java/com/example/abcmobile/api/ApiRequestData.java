@@ -1,10 +1,10 @@
 package com.example.abcmobile.api;
 
 import com.example.abcmobile.model.AccountResponse;
-import com.example.abcmobile.model.TransferModel;
 import com.example.abcmobile.model.TransferResponse;
 import com.example.abcmobile.model.UserResponse;
 import com.example.abcmobile.model.VirtualAccountResponse;
+
 import retrofit2.Call;
 import retrofit2.http.*;
 
@@ -12,53 +12,58 @@ public interface ApiRequestData {
     @GET("/listTransfer")
     Call<TransferResponse> getListTransfer();
 
-    /*
-    @GET("/infoaccount")
-    Call<AccountResponse> getAccountInfo();
-
-    @GET("/login")
-    Call<UserResponse> login();
+    @GET("/infoaccount/{nomor_kartu}")
+    Call<AccountResponse> getAccountInfo(
+       @Path("nomor_kartu") String NomorKartu
+    );
 
     @FormUrlEncoded
-    @POST("/transfer")
-    fun insertTransfer(
-        @Field("Id") Id: Int,
-        @Field("Jumlah") Jumlah: String,
-        @Field("Berita") Berita: String,
-        @Field("RekeningPengirim") RekeningPengirim: String,
-        @Field("RekeningPenerima") RekeningPenerima: String,
-        @Field("Waktu") Waktu: String
-    ): Call<TransferResponse>
+    @POST("/login")
+    Call<UserResponse> login(
+       @Field("nomor_kartu") String NomorKartu,
+       @Field("kode_akses") String KodeAkses
+    );
+
+    @GET("/logout")
+    Call<UserResponse> logout();
+
+    @FormUrlEncoded
+    @POST("/insertTransfer")
+    Call<TransferResponse> insertTransfer(
+        @Field("jumlah") Integer Jumlah,
+        @Field("berita") String Berita,
+        @Field("rekening_penerima") String RekeningPenerima,
+        @Field("rekening_pengirim") String RekeningPengirim
+    );
 
     @FormUrlEncoded
     @POST("/virtualaccount")
-    fun insertVirtualAccount(
-        @Field("Id") Id: Int,
-        @Field("Transfer") Transfer: String,
-        @Field("NoVA") NoVA: String,
-        @Field("Tagihan") Tagihan: String,
-        @Field("Batas") Batas: String,
-        @Field("Waktu") Waktu: String,
-        @Field("Status") Status: Int
-    ): Call<VirtualAccountResponse>
+    Call<VirtualAccountResponse> insertVirtualAccount(
+        @Field("rekening_penerima") String RekeningPenerima,
+        @Field("rekening_pengirim") String RekeningPengirim
+    );
 
     @FormUrlEncoded
     @POST("/rekeningbaru")
-    fun insertRekening(
-        @Field("Id") Id: Int,
-        @Field("User") User: String,
-        @Field("Saldo") Saldo: Int,
-        @Field("Nomor Kartu") NomorKartu: String,
-        @Field("Nomor Rekening") NomorRekening: String,
-        @Field("Kode Akses") KodeAkses: String
-    ): Call<AccountResponse>
+    Call<UserResponse> insertRekening(
+        @Field("nama") String Nama,
+        @Field("ttl") String Ttl,
+        @Field("jenis_kelamin") String Jk,
+        @Field("alamat") String Alamat,
+        @Field("status_perkawinan") Integer StatusKawin,
+        @Field("pekerjaan") String Pekerjaan,
+        @Field("kewarganegaraan") String Kewarganegaraan,
+        @Field("no_hp") String NomorHP,
+        @Field("kode_akses") String KodeAkses,
+        @Field("agama") String Agama
+    );
 
+    //Update Kode Akses
     @FormUrlEncoded
-    @PUT("/gantikodeakses/{nomor_rekening}")
-    fun updateKodeAkses(
-        @Path("nomor_rekening") nomor_rekening: String?,
-        @Field("kode_akses") kode_akses: String?
-    ): Call<AccountResponse>
+    @POST("/gantikodeakses")
+    Call<AccountResponse> updateKodeAkses(
+       @Field("nomor_rekening") String NomorRekening,
+       @Field("kode_akses") String KodeAkses
+    );
 
-     */
 }

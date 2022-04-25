@@ -1,8 +1,12 @@
 package com.example.abcmobile.model;
 
+import java.sql.Time;
+
 public class VirtualAccountModel {
-    private int Id, Transfer, Status;
-    private String NoVA, Tagihan, Batas, Waktu;
+    private int Id, Tagihan, Status;
+    private TransferModel transfer;
+    private String NoVA;
+    private Time Batas, Waktu;
 
     public int getId() {
         return Id;
@@ -12,12 +16,20 @@ public class VirtualAccountModel {
         Id = id;
     }
 
-    public int getTransfer() {
-        return Transfer;
+    public TransferModel getTransfer() {
+        return transfer;
     }
 
-    public void setTransfer(int transfer) {
-        Transfer = transfer;
+    public void setTransfer(TransferModel transfer) {
+        this.transfer = transfer;
+    }
+
+    public int getTagihan() {
+        return Tagihan;
+    }
+
+    public void setTagihan(int tagihan) {
+        Tagihan = tagihan;
     }
 
     public int getStatus() {
@@ -36,27 +48,19 @@ public class VirtualAccountModel {
         NoVA = noVA;
     }
 
-    public String getTagihan() {
-        return Tagihan;
-    }
-
-    public void setTagihan(String tagihan) {
-        Tagihan = tagihan;
-    }
-
-    public String getBatas() {
+    public Time getBatas() {
         return Batas;
     }
 
-    public void setBatas(String batas) {
+    public void setBatas(Time batas) {
         Batas = batas;
     }
 
-    public String getWaktu() {
+    public Time getWaktu() {
         return Waktu;
     }
 
-    public void setWaktu(String waktu) {
+    public void setWaktu(Time waktu) {
         Waktu = waktu;
     }
 }

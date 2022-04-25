@@ -12,6 +12,9 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.example.abcmobile.R;
 import com.example.abcmobile.model.TransferModel;
 
+import java.sql.Date;
+import java.sql.Time;
+import java.util.ArrayList;
 import java.util.List;
 
 public class TransferAdapter extends RecyclerView.Adapter<TransferAdapter.HolderData> {
@@ -35,11 +38,11 @@ public class TransferAdapter extends RecyclerView.Adapter<TransferAdapter.Holder
     public void onBindViewHolder(@NonNull HolderData holder, int position) {
         TransferModel tm = listTransfer.get(position);
         holder.tvId.setText(String.valueOf(tm.getId()));
-        holder.tvJumlah.setText(tm.getJumlah());
+        holder.tvJumlah.setText(String.valueOf(tm.getJumlah()));
         holder.tvBerita.setText(tm.getBerita());
         holder.tvRekeningPengirim.setText(tm.getRekeningPengirim());
         holder.tvRekeningPenerima.setText(tm.getRekeningPenerima());
-        holder.tvWaktu.setText(tm.getWaktu());
+        holder.tvWaktu.setText(String.valueOf(tm.getWaktu()));
     }
 
     @Override

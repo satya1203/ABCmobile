@@ -42,12 +42,12 @@
         android:text="@string/selamatdatang"
         android:textColor="@color/white"
         android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@+id/textView12"
+        app:layout_constraintBottom_toTopOf="@+id/tv_user_main"
         app:layout_constraintStart_toStartOf="@+id/judul"
         app:layout_constraintTop_toBottomOf="@+id/judul" />
 
     <TextView
-        android:id="@+id/textView12"
+        android:id="@+id/tv_user_main"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="56dp"
@@ -69,7 +69,7 @@
         app:layout_constraintBottom_toTopOf="@+id/linearLayout9"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView12">
+        app:layout_constraintTop_toBottomOf="@+id/tv_user_main">
 
         <LinearLayout
             android:layout_width="wrap_content"

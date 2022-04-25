@@ -14,6 +14,7 @@
         android:layout_marginBottom="25dp"
         android:background="#686868"
         android:orientation="horizontal"
+        android:gravity="center"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -24,18 +25,16 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="150dp"
-            android:layout_marginTop="10dp"
             android:text="m-Transfer"
             android:textAlignment="center"
             android:textColor="@color/white"
             android:textSize="24dp" />
 
         <Button
-            android:id="@+id/button5"
+            android:id="@+id/btn_send_transfer"
             android:layout_width="75dp"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="50dp"
-            android:layout_marginTop="7dp"
+            android:layout_marginLeft="120dp"
             android:backgroundTint="#2866f3"
             android:text="Send" />
 
@@ -161,6 +160,7 @@
                             android:layout_marginTop="7dp" />
 
                         <EditText
+                            android:id="@+id/et_jumlah"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:padding="5dp"
@@ -197,6 +197,7 @@
                             android:layout_marginTop="7dp"/>
 
                         <EditText
+                            android:id="@+id/et_berita"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:padding="5dp"

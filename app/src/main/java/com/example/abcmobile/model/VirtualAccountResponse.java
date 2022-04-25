@@ -4,7 +4,7 @@ import java.util.List;
 
 public class VirtualAccountResponse {
     private String message;
-    private List<TransferModel> data;
+    private List<VirtualAccountModel> data;
 
     public String getMessage() {
         return message;
@@ -14,11 +14,11 @@ public class VirtualAccountResponse {
         this.message = message;
     }
 
-    public List<TransferModel> getData() {
+    public List<VirtualAccountModel> getData() {
         return data;
     }
 
-    public void setData(List<TransferModel> data) {
+    public void setData(List<VirtualAccountModel> data) {
         this.data = data;
     }
 }

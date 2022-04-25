@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.abcmobile">
+    package="com.example.abcmobile" >
 
-    <uses-permission android:name="android.permission.INTERNET"/>
-
+    <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
@@ -13,24 +12,38 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.ABCMobile">
-        <activity android:name=".activity.Login"
-            android:parentActivityName=".activity.MainActivity"></activity>
-        <activity android:name=".activity.InsertRekening"
-            android:parentActivityName=".activity.MainActivity"></activity>
-        <activity android:name=".activity.UpdateKodeAkses"
-            android:parentActivityName=".activity.MainActivity"></activity>
-        <activity android:name=".activity.M_ABC"
-            android:parentActivityName=".activity.MainActivity"></activity>
-        <activity android:name=".activity.M_Info"
-            android:parentActivityName=".activity.M_ABC"></activity>
-        <activity android:name=".activity.InsertTransfer"
-            android:parentActivityName=".activity.M_ABC"></activity>
-        <activity android:name=".activity.InsertVirtualAccount"
-            android:parentActivityName=".activity.M_ABC"></activity>
+        android:theme="@style/Theme.ABCMobile" >
+        <activity
+            android:name=".activity.Favorit"
+            android:exported="false" />
+        <activity
+            android:name=".activity.Login"
+            android:parentActivityName=".activity.MainActivity" />
+        <activity
+            android:name=".activity.BottomNav"
+            android:parentActivityName=".activity.MainActivity" />
+        <activity
+            android:name=".activity.InsertRekening"
+            android:parentActivityName=".activity.MainActivity" />
+        <activity
+            android:name=".activity.UpdateKodeAkses"
+            android:parentActivityName=".activity.MainActivity" /> <!-- <activity android:name=".activity.M_ABC" -->
+        <!-- android:parentActivityName=".activity.MainActivity"></activity> -->
+        <activity
+            android:name=".activity.M_Info"
+            android:parentActivityName=".activity.M_ABC" />
+        <activity
+            android:name=".activity.InsertTransfer"
+            android:parentActivityName=".activity.M_ABC" />
+        <activity
+            android:name=".activity.InsertVirtualAccount"
+            android:parentActivityName=".activity.M_ABC" />
+        <activity
+            android:name=".activity.InfoAccount"
+            android:parentActivityName=".activity.M_Info" />
         <activity
             android:name=".activity.MainActivity"
-            android:exported="true">
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

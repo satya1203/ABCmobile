@@ -1,7 +1,9 @@
 package com.example.abcmobile.activity;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -28,6 +30,7 @@ import retrofit2.Response;
 
 public class MainActivity extends AppCompatActivity {
 
+    private final static int EXIT_CODE = 100;
     private Button btn_mabc;
     private Button btn_rek_baru;
     private Button btn_ganti_kode;
@@ -61,6 +64,20 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(MainActivity.this, UpdateKodeAkses.class));
             }
         });
+    }
+
+    @Override
+    public void onBackPressed() {
+        new AlertDialog.Builder(this)
+                .setTitle("Exit")
+                .setMessage("Are you sure you want to exit?")
+                .setNegativeButton(android.R.string.no, null)
+                .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface arg0, int arg1) {
+                        finishAffinity();
+                        finish();
+                    }
+                }).create().show();
     }
 
 }

@@ -2,7 +2,6 @@ package controller
 
 import (
 	"crypto/rand"
-	"encoding/json"
 	"errors"
 	"fmt"
 	"log"
@@ -18,14 +17,10 @@ func Login(c *gin.Context) {
 	db := connect()
 	defer db.Close()
 
-	var accountData model.Account
-	err := json.NewDecoder(c.Request.Body).Decode(&accountData)
+	nomorKartu := c.PostForm("nomor_kartu")
+	kodeAkses := c.PostForm("kode_akses")
 
-	if err != nil {
-		log.Println(err)
-	}
-
-	query := "SELECT id, saldo, nomor_kartu, nomor_rekening, kode_akses FROM account WHERE nomor_kartu = '" + accountData.NomorKartu + "' AND kode_akses = '" + accountData.KodeAkses + "'"
+	query := "SELECT id, saldo, nomor_kartu, nomor_rekening, kode_akses FROM account WHERE nomor_kartu = '" + nomorKartu + "' AND kode_akses = '" + kodeAkses + "'"
 
 	rows, err := db.Query(query)
 	if err != nil {
@@ -40,7 +35,7 @@ func Login(c *gin.Context) {
 	}
 
 	var response model.LoginResponse
-	if account.KodeAkses == accountData.KodeAkses {
+	if account.KodeAkses == kodeAkses {
 		generateToken(c, account.Id, account.NomorKartu, account.NomorRekening)
 		response.Message = "Login Success"
 		sendLoginSuccessResponse(c, response)
@@ -355,7 +350,7 @@ func UpdateKodeAkses(c *gin.Context) {
 	db := connect()
 	defer db.Close()
 
-	nomorRekening := c.Param("nomor_rekening")
+	nomorRekening := c.PostForm("nomor_rekening")
 	kodeAkses := c.PostForm("kode_akses")
 
 	_, errQuery := db.Exec("UPDATE account SET kode_akses = ? WHERE nomor_rekening=?",

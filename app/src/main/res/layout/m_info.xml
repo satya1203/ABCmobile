@@ -10,10 +10,10 @@
         android:id="@+id/linearLayout4"
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:layout_marginTop="1dp"
         android:layout_marginBottom="25dp"
         android:background="#686868"
         android:orientation="vertical"
+        android:gravity="center"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.571"
@@ -24,7 +24,6 @@
             android:id="@+id/action_bar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
             android:text="m-Info"
             android:textAlignment="center"
             android:textColor="@color/white"
@@ -54,6 +53,25 @@
             android:layout_marginLeft="20dp"
             android:layout_marginTop="50dp"
             android:text="@string/infosaldo"
+            android:textColor="#2866f3"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="15dp"
+            android:background="#c0c0c0" />
+
+        <TextView
+            android:id="@+id/tv_favorit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/favorit"
             android:textColor="#2866f3"
             android:textSize="18sp"
             android:textStyle="bold" />

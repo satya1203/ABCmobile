@@ -1,8 +1,9 @@
 package com.example.abcmobile.model;
 
 public class AccountModel {
-    private int Id, User, Saldo, KodeAkses;
-    private String NomorKartu, NomorRekening;
+    private int Id, Saldo;
+    private String NomorKartu, NomorRekening, KodeAkses;
+    private UserModel user;
 
     public int getId() {
         return Id;
@@ -20,20 +21,12 @@ public class AccountModel {
         Saldo = saldo;
     }
 
-    public int getKodeAkses() {
-        return KodeAkses;
+    public UserModel getUser() {
+        return user;
     }
 
-    public void setKodeAkses(int kodeAkses) {
-        KodeAkses = kodeAkses;
-    }
-
-    public int getUser() {
-        return User;
-    }
-
-    public void setUser(int user) {
-        User = user;
+    public void setUser(UserModel user) {
+        this.user = user;
     }
 
     public String getNomorKartu() {
@@ -50,5 +43,13 @@ public class AccountModel {
 
     public void setNomorRekening(String nomorRekening) {
         NomorRekening = nomorRekening;
+    }
+
+    public String getKodeAkses() {
+        return KodeAkses;
+    }
+
+    public void setKodeAkses(String kodeAkses) {
+        KodeAkses = kodeAkses;
     }
 }

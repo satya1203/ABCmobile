@@ -11,9 +11,9 @@
         android:id="@+id/action_bar_rekening_baru"
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:layout_marginTop="1dp"
         android:layout_marginBottom="25dp"
         android:background="#686868"
+        android:gravity="center"
         android:orientation="horizontal"
         app:layout_constraintBottom_toTopOf="@+id/input_data"
         app:layout_constraintEnd_toEndOf="parent"
@@ -26,18 +26,16 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="150dp"
             android:gravity="center"
-            android:layout_marginTop="10dp"
-            android:text="@string/mtransfer"
+            android:text="@string/newaccount"
             android:textAlignment="center"
             android:textColor="@color/white"
             android:textSize="24dp" />
 
         <Button
-            android:id="@+id/button_send_rekening_baru"
+            android:id="@+id/btn_send_rekening_baru"
             android:layout_width="75dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="100dp"
-            android:layout_marginTop="7dp"
             android:backgroundTint="#2866f3"
             android:text="@string/send" />
 
@@ -68,7 +66,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="60dp"
                 android:gravity="center"
-                android:text="@string/mobilepayment"
+                android:text="@string/account"
                 android:textColor="#2866f3"
                 android:textSize="24dp" />
 
@@ -90,7 +88,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="5dp"
-                    android:text="@string/Transfer"
+                    android:text="@string/details"
                     android:textColor="@color/white"
                     android:textStyle="bold" />
 
@@ -122,12 +120,15 @@
                             android:textColor="#2866f3"
                             android:textSize="18dp"
                             android:textStyle="bold"
+                            android:gravity="left"
                             android:layout_marginLeft="15dp"
                             android:layout_marginTop="7dp" />
 
                         <EditText
-                            android:layout_width="150dp"
+                            android:id="@+id/et_nama"
+                            android:layout_width="wrap_content"
                             android:layout_height="match_parent"
+                            android:layout_marginLeft="150dp"
                             android:background="@null"
                             android:gravity="right"
                             android:hint="@string/input" />
@@ -166,8 +167,10 @@
                             android:layout_marginTop="7dp" />
 
                         <EditText
-                            android:layout_width="156dp"
+                            android:id="@+id/et_ttl"
+                            android:layout_width="wrap_content"
                             android:layout_height="match_parent"
+                            android:layout_marginLeft="156dp"
                             android:background="@null"
                             android:gravity="right"
                             android:hint="@string/input" />
@@ -206,8 +209,10 @@
                             android:layout_marginTop="7dp" />
 
                         <EditText
-                            android:layout_width="183dp"
+                            android:id="@+id/et_jk"
+                            android:layout_width="wrap_content"
                             android:layout_height="match_parent"
+                            android:layout_marginLeft="180dp"
                             android:background="@null"
                             android:gravity="right"
                             android:hint="@string/input" />
@@ -246,9 +251,10 @@
                             android:layout_marginTop="7dp" />
 
                         <EditText
-                            android:layout_width="234dp"
+                            android:id="@+id/et_alamat"
+                            android:layout_width="wrap_content"
                             android:layout_height="match_parent"
-
+                            android:layout_marginLeft="236dp"
                             android:background="@null"
                             android:gravity="right"
                             android:hint="@string/input" />
@@ -287,9 +293,11 @@
                             android:layout_marginTop="7dp" />
 
                         <EditText
-                            android:layout_width="145dp"
+                            android:id="@+id/et_status_kawin"
+                            android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:background="@null"
+                            android:layout_marginLeft="145dp"
                             android:gravity="right"
                             android:hint="@string/input" />
                     </TableRow>
@@ -327,8 +335,10 @@
                             android:layout_marginTop="7dp" />
 
                         <EditText
-                            android:layout_width="213dp"
+                            android:id="@+id/et_pekerjaan"
+                            android:layout_width="wrap_content"
                             android:layout_height="match_parent"
+                            android:layout_marginLeft="215dp"
                             android:background="@null"
                             android:gravity="right"
                             android:hint="@string/input" />
@@ -367,8 +377,10 @@
                             android:layout_marginTop="7dp" />
 
                         <EditText
-                            android:layout_width="150dp"
+                            android:id="@+id/et_kewarganegaraan"
+                            android:layout_width="wrap_content"
                             android:layout_height="match_parent"
+                            android:layout_marginLeft="150dp"
                             android:background="@null"
                             android:gravity="right"
                             android:hint="@string/input" />
@@ -407,8 +419,10 @@
                             android:layout_marginTop="7dp" />
 
                         <EditText
-                            android:layout_width="238dp"
+                            android:id="@+id/et_nohp"
+                            android:layout_width="wrap_content"
                             android:layout_height="match_parent"
+                            android:layout_marginLeft="240dp"
                             android:background="@null"
                             android:gravity="right"
                             android:hint="@string/input" />
@@ -447,8 +461,53 @@
                             android:layout_marginTop="7dp" />
 
                         <EditText
-                            android:layout_width="196dp"
+                            android:id="@+id/et_kode_akses_daftar"
+                            android:layout_width="wrap_content"
                             android:layout_height="match_parent"
+                            android:layout_marginLeft="200dp"
+                            android:background="@null"
+                            android:gravity="right"
+                            android:inputType="number"
+                            android:hint="@string/input" />
+                    </TableRow>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="15dp"
+                        android:background="#c0c0c0" />
+                </TableLayout>
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="13dp"
+                    android:paddingRight="13dp">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="40dp"
+                        android:layout_marginBottom="3dp"
+                        android:layout_marginTop="3dp">
+
+                        <TextView
+                            android:id="@+id/Agama"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/agama"
+                            android:textColor="#2866f3"
+                            android:textSize="18dp"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="7dp" />
+
+                        <EditText
+                            android:id="@+id/et_agama"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="235dp"
                             android:background="@null"
                             android:gravity="right"
                             android:hint="@string/input" />

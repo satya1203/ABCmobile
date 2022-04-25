@@ -29,7 +29,7 @@ func main() {
 	}))
 
 	//Login
-	router.GET("/login", controllers.Login)
+	router.POST("/login", controllers.Login)
 
 	//Logout
 	router.GET("/logout", controllers.Logout)
@@ -50,7 +50,7 @@ func main() {
 	router.POST("/rekeningbaru", controllers.InsertRekening)
 
 	// Ganti Kode Akses
-	router.PUT("/gantikodeakses/:nomor_rekening", controllers.UpdateKodeAkses)
+	router.PUT("/gantikodeakses", controllers.UpdateKodeAkses)
 
 	router.Run(":8080")
 	fmt.Println("Connected to port 8080")

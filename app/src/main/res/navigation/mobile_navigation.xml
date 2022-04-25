@@ -15,5 +15,5 @@
         android:id="@+id/navigation_transaction"
         android:name="com.example.abcmobile.activity.ListTransfer"
         android:label="@string/Transaction"
-        tools:layout="@layout/berhasil" />
+        tools:layout="@layout/list_transaksi" />
 </navigation>

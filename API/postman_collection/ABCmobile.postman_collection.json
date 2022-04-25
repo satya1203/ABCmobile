@@ -1,12 +1,12 @@
 {
 	"info": {
-		"_postman_id": "4094b187-426e-4108-882e-8c5ee47d32d9",
+		"_postman_id": "42de9a3b-d199-4f5b-851d-28cd765e6af2",
 		"name": "ABCmobile",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
 		{
-			"name": "InfoAccount",
+			"name": "Info Account",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -15,29 +15,24 @@
 				"header": [],
 				"body": {
 					"mode": "formdata",
-					"formdata": [
-						{
-							"key": "nomor_kartu",
-							"value": "123456789",
-							"type": "text"
-						}
-					]
+					"formdata": []
 				},
 				"url": {
-					"raw": "localhost:8080/infoaccount",
+					"raw": "localhost:8080/infoaccount/123456",
 					"host": [
 						"localhost"
 					],
 					"port": "8080",
 					"path": [
-						"infoaccount"
+						"infoaccount",
+						"123456"
 					]
 				}
 			},
 			"response": []
 		},
 		{
-			"name": "Transfer",
+			"name": "Insert Transfer",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -67,20 +62,20 @@
 					]
 				},
 				"url": {
-					"raw": "localhost:8080/transfer",
+					"raw": "localhost:8080/insertTransfer",
 					"host": [
 						"localhost"
 					],
 					"port": "8080",
 					"path": [
-						"transfer"
+						"insertTransfer"
 					]
 				}
 			},
 			"response": []
 		},
 		{
-			"name": "Virtualaccount",
+			"name": "Insert Virtual Account",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -107,25 +102,13 @@
 					"port": "8080",
 					"path": [
 						"virtualaccount"
-					],
-					"query": [
-						{
-							"key": "rekening_pengirim",
-							"value": "987654321",
-							"disabled": true
-						},
-						{
-							"key": "rekening_penerima",
-							"value": "987654",
-							"disabled": true
-						}
 					]
 				}
 			},
 			"response": []
 		},
 		{
-			"name": "RekeningBaru",
+			"name": "Insert Rekening Baru",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -134,27 +117,27 @@
 					"formdata": [
 						{
 							"key": "nama",
-							"value": "aji",
+							"value": "James",
 							"type": "text"
 						},
 						{
 							"key": "ttl",
-							"value": "bandung/ 12 desemer 2001",
+							"value": "Jakarta / 12 Desember 2000",
 							"type": "text"
 						},
 						{
 							"key": "jenis_kelamin",
-							"value": "0",
+							"value": "L",
 							"type": "text"
 						},
 						{
 							"key": "alamat",
-							"value": "bulan",
+							"value": "Jalan Gagak",
 							"type": "text"
 						},
 						{
 							"key": "agama",
-							"value": "islam",
+							"value": "Kristen",
 							"type": "text"
 						},
 						{
@@ -164,7 +147,7 @@
 						},
 						{
 							"key": "pekerjaan",
-							"value": "DJ",
+							"value": "Wiraswasta",
 							"type": "text"
 						},
 						{
@@ -174,12 +157,12 @@
 						},
 						{
 							"key": "no_hp",
-							"value": "08546512316",
+							"value": "08123456789",
 							"type": "text"
 						},
 						{
-							"key": "kodeakses",
-							"value": "456",
+							"key": "kode_akses",
+							"value": "455776",
 							"type": "text"
 						}
 					]
@@ -198,10 +181,104 @@
 			"response": []
 		},
 		{
-			"name": "GantiKodeAkses",
+			"name": "Ganti Kode Akses",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "kode_akses",
+							"value": "344665",
+							"type": "text"
+						},
+						{
+							"key": "nomor_rekening",
+							"value": "A8C3F4DE15",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8080/gantikodeakses",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"gantikodeakses"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "nomor_kartu",
+							"value": "123456789",
+							"type": "text"
+						},
+						{
+							"key": "kode_akses",
+							"value": "chocolate",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8080/login",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Logout",
 			"request": {
 				"method": "GET",
-				"header": []
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/logout",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"logout"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List Transfer",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/listTransfer",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"listTransfer"
+					]
+				}
 			},
 			"response": []
 		}

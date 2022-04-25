@@ -11,10 +11,10 @@
         android:id="@+id/linearLayout5"
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:layout_marginTop="1dp"
         android:layout_marginBottom="25dp"
         android:background="#686868"
         android:orientation="horizontal"
+        android:gravity="center"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -25,18 +25,16 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="150dp"
-            android:layout_marginTop="10dp"
-            android:text="@string/mtransfer"
+            android:text="@string/mpayment"
             android:textAlignment="center"
             android:textColor="@color/white"
             android:textSize="24dp" />
 
         <Button
-            android:id="@+id/btn_send"
-            android:layout_width="wrap_content"
+            android:id="@+id/btn_send_VA"
+            android:layout_width="75dp"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="40dp"
-            android:layout_marginTop="7dp"
+            android:layout_marginLeft="80dp"
             android:backgroundTint="#2866f3"
             android:text="@string/send" />
 
@@ -89,7 +87,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="5dp"
-                    android:text="@string/Transfer"
+                    android:text="@string/mobilepayment"
                     android:textColor="@color/white"
                     android:textStyle="bold" />
 
@@ -114,10 +112,10 @@
                         android:layout_marginTop="3dp">
 
                         <TextView
-                            android:id="@+id/textView9"
+                            android:id="@+id/tv_rek_pengirim"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="@string/novA"
+                            android:text="@string/rekeningpengirim"
                             android:textColor="#2866f3"
                             android:textSize="18dp"
                             android:textStyle="bold"
@@ -125,6 +123,7 @@
                             android:layout_marginTop="7dp" />
 
                         <EditText
+                            android:id="@+id/et_rek_pengirim"
                             android:layout_width="160dp"
                             android:layout_height="match_parent"
                             android:paddingLeft="5dp"
@@ -132,14 +131,52 @@
                             android:background="@null"
                             android:gravity="center"/>
                     </TableRow>
+
                     <View
                         android:layout_width="match_parent"
                         android:layout_height="2dp"
                         android:layout_marginLeft="15dp"
                         android:layout_marginTop="5dp"
                         android:layout_marginRight="15dp"
-                        android:background="#c0c0c0" />
+                        android:background="#c0c0c0"/>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="40dp"
+                        android:layout_marginBottom="3dp"
+                        android:layout_marginTop="3dp">
+
+                        <TextView
+                            android:id="@+id/tv_rek_penerima"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/rekeningpenerima"
+                            android:textColor="#2866f3"
+                            android:textSize="18dp"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="7dp" />
+
+                        <EditText
+                            android:id="@+id/et_rek_penerima"
+                            android:layout_width="160dp"
+                            android:layout_height="match_parent"
+                            android:paddingLeft="5dp"
+                            android:hint="@string/input"
+                            android:background="@null"
+                            android:gravity="center"/>
+                    </TableRow>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="3dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="15dp"
+                        android:background="#c0c0c0"/>
                 </TableLayout>
+
             </LinearLayout>
 
         </LinearLayout>

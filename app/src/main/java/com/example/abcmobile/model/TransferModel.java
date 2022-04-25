@@ -1,22 +1,24 @@
 package com.example.abcmobile.model;
 
+import java.sql.Time;
+
 public class TransferModel {
-    private int Id;
-    private String Jumlah, Berita, RekeningPengirim, RekeningPenerima, Waktu;
+    private int Id, Jumlah;
+    private String Berita, RekeningPengirim, RekeningPenerima, Waktu;
 
     public int getId() {
         return Id;
     }
 
     public void setId(int id) {
-        this.Id = id;
+        Id = id;
     }
 
-    public String getJumlah() {
+    public int getJumlah() {
         return Jumlah;
     }
 
-    public void setJumlah(String jumlah) {
+    public void setJumlah(int jumlah) {
         Jumlah = jumlah;
     }
 
