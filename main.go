@@ -5,9 +5,11 @@ import (
 	// "net/ht tp"
 	"log"
 	"os"
+
 	// "strconv"
-	"github.com/joho/godotenv"
 	"time"
+
+	"github.com/joho/godotenv"
 
 	controllers "github.com/ABCMobile/controller"
 	_ "github.com/go-sql-driver/mysql"
@@ -69,7 +71,7 @@ func main() {
 
 	port := os.Getenv("PORT")
 	fmt.Println(port)
-	router.Run(":" + port)
+	router.Run("0.0.0.0:" + port)
 	fmt.Println("Connected to port 9090")
 
 	// PORT := os.Getenv("PORT")
