@@ -3,9 +3,10 @@ package main
 import (
 	"fmt"
 	// "net/ht tp"
-	// "log"
+	"log"
 	"os"
 	// "strconv"
+	"github.com/joho/godotenv"
 	"time"
 
 	controllers "github.com/ABCMobile/controller"
@@ -60,11 +61,6 @@ func main() {
 
 	// Ganti Kode Akses
 	router.PUT("/gantikodeakses", controllers.UpdateKodeAkses)
-
-	err := godotenv.Load(".env")
-	if err != nil {
-		log.Fatalf("Error loading .env file")
-	}
 
 	err := godotenv.Load(".env")
 	if err != nil {
