@@ -71,8 +71,8 @@ func main() {
 
 	port := os.Getenv("PORT")
 	fmt.Println(port)
-	router.Run("0.0.0.0:" + port)
-	fmt.Println("Connected to port 9090")
+	router.Run(":" + port)
+	fmt.Println("Connected to port ")
 
 	// PORT := os.Getenv("PORT")
 

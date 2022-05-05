@@ -1,0 +1,286 @@
+{
+	"info": {
+		"_postman_id": "42de9a3b-d199-4f5b-851d-28cd765e6af2",
+		"name": "ABCmobile",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Info Account",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "localhost:8080/infoaccount/123456",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"infoaccount",
+						"123456"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Insert Transfer",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "jumlah",
+							"value": "50000",
+							"type": "text"
+						},
+						{
+							"key": "berita",
+							"value": "pembelian gitar",
+							"type": "text"
+						},
+						{
+							"key": "rekening_pengirim",
+							"value": "987654321",
+							"type": "text"
+						},
+						{
+							"key": "rekening_penerima",
+							"value": "987654",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8080/insertTransfer",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"insertTransfer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Insert Virtual Account",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "rekening_pengirim",
+							"value": "987654321",
+							"type": "text"
+						},
+						{
+							"key": "rekening_penerima",
+							"value": "987654",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8080/virtualaccount",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"virtualaccount"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Insert Rekening Baru",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "nama",
+							"value": "James",
+							"type": "text"
+						},
+						{
+							"key": "ttl",
+							"value": "Jakarta / 12 Desember 2000",
+							"type": "text"
+						},
+						{
+							"key": "jenis_kelamin",
+							"value": "L",
+							"type": "text"
+						},
+						{
+							"key": "alamat",
+							"value": "Jalan Gagak",
+							"type": "text"
+						},
+						{
+							"key": "agama",
+							"value": "Kristen",
+							"type": "text"
+						},
+						{
+							"key": "status_perkawinan",
+							"value": "0",
+							"type": "text"
+						},
+						{
+							"key": "pekerjaan",
+							"value": "Wiraswasta",
+							"type": "text"
+						},
+						{
+							"key": "kewarganegaraan",
+							"value": "Indonesia",
+							"type": "text"
+						},
+						{
+							"key": "no_hp",
+							"value": "08123456789",
+							"type": "text"
+						},
+						{
+							"key": "kode_akses",
+							"value": "455776",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8080/rekeningbaru",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"rekeningbaru"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Ganti Kode Akses",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "kode_akses",
+							"value": "344665",
+							"type": "text"
+						},
+						{
+							"key": "nomor_rekening",
+							"value": "A8C3F4DE15",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8080/gantikodeakses",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"gantikodeakses"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "nomor_kartu",
+							"value": "123456789",
+							"type": "text"
+						},
+						{
+							"key": "kode_akses",
+							"value": "chocolate",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8080/login",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Logout",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/logout",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"logout"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List Transfer",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/listTransfer",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"listTransfer"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
