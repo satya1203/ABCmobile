@@ -64,15 +64,16 @@ func main() {
 	// Ganti Kode Akses
 	router.PUT("/gantikodeakses", controllers.UpdateKodeAkses)
 
-	err := godotenv.Load(".env")
-	if err != nil {
-		log.Fatalf("Error loading .env file")
-	}
+	// err := godotenv.Load(".env")
+	// if err != nil {
+	// 	log.Fatalf("Error loading .env file")
+	// }
 
-	port := os.Getenv("PORT")
-	fmt.Println(port)
-	router.Run(":" + port)
-	fmt.Println("Connected to port ")
+	// port := os.Getenv("PORT")
+	// fmt.Println(port)
+	// router.Run(":" + port)
+	router.Run(":8080")
+	fmt.Println("Connected to port 8080")
 
 	// PORT := os.Getenv("PORT")
 
