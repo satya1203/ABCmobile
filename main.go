@@ -69,10 +69,10 @@ func main() {
 	// 	log.Fatalf("Error loading .env file")
 	// }
 
-	// port := os.Getenv("PORT")
-	// fmt.Println(port)
-	// router.Run(":" + port)
-	router.Run(":8080")
+	port := os.Getenv("PORT")
+	fmt.Println(port)
+	router.Run(":" + port)
+	// router.Run(":8080")
 	fmt.Println("Connected to port 8080")
 
 	// PORT := os.Getenv("PORT")
