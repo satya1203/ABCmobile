@@ -2,7 +2,6 @@ package main
 
 import (
 	"fmt"
-	"net/http"
 	// "net/ht tp"
 	// "log"
 	"os"
@@ -17,9 +16,7 @@ import (
 
 	"github.com/gin-contrib/cors"
 	"github.com/gin-gonic/gin"
-
 	// "github.com/russross/blackfriday"
-	"github.com/astaxie/beego/grace"
 )
 
 func main() {
@@ -72,17 +69,12 @@ func main() {
 	// 	log.Fatalf("Error loading .env file")
 	// }
 
-	// port := os.Getenv("PORT")
-	// fmt.Println(port)
 	port := os.Getenv("PORT")
-	if port == "" {
-		port = "9000" // Default port if not specified
-	}
-	err := grace.Serve(":"+port, context.ClearHandler(http.DefaultServeMux))
+	fmt.Println(port)
 	router.Run(":" + port)
 	// router.Run(":8080")
-	// fmt.Println("Connected to port 8080")
-	//a
+	fmt.Println("Connected to port 8080")
+
 	// PORT := os.Getenv("PORT")
 
 	// // if PORT == "" {
