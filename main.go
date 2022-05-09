@@ -69,11 +69,16 @@ func main() {
 	// 	log.Fatalf("Error loading .env file")
 	// }
 
+	// port := os.Getenv("PORT")
+	// fmt.Println(port)
 	port := os.Getenv("PORT")
-	fmt.Println(port)
+	if port == "" {
+    	port = "9000" // Default port if not specified
+	}
+	err := grace.Serve(":" + port, context.ClearHandler(http.DefaultServeMux))
 	router.Run(":" + port)
 	// router.Run(":8080")
-	fmt.Println("Connected to port 8080")
+	// fmt.Println("Connected to port 8080")
 	//a
 	// PORT := os.Getenv("PORT")
 
