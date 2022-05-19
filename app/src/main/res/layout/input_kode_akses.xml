@@ -75,8 +75,7 @@
             android:layout_marginLeft="15dp"
             android:layout_marginRight="15dp"
             android:hint="@string/inputnomor"
-            android:textAlignment="center"
-            android:inputType="number"/>
+            android:textAlignment="center" />
 
         <TextView
             android:id="@+id/tv_kodeakses"

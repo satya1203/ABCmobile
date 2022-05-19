@@ -73,8 +73,8 @@ public class Favorit extends AppCompatActivity {
                 }
                 StringBuffer buffer = new StringBuffer();
                 while(res.moveToNext()){
-                    buffer.append("Rekening : " + res.getString(1) + "\n");
-                    buffer.append("Alias : " + res.getString(2) + "\n");
+                    buffer.append("Rekening : " + res.getString(0) + "\n");
+                    buffer.append("Alias : " + res.getString(1) + "\n");
                 }
                 AlertDialog.Builder builder = new AlertDialog.Builder(Favorit.this);
                 builder.setCancelable(true);
@@ -92,9 +92,9 @@ public class Favorit extends AppCompatActivity {
 
                 Boolean cek = db.updateFavorites(norek, alias);
                 if(cek) {
-                    Toast.makeText(Favorit.this, "Update Favorite Succeed!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(Favorit.this, "Update Berhasil!", Toast.LENGTH_SHORT).show();
                 } else {
-                    Toast.makeText(Favorit.this, "Failed Update Favorite!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(Favorit.this, "Nomor Rekening Tidak Ditemukan!", Toast.LENGTH_SHORT).show();
                 }
             }
         });
@@ -106,9 +106,9 @@ public class Favorit extends AppCompatActivity {
 
                 Boolean cek = db.deleteFavorites(norek);
                 if(cek) {
-                    Toast.makeText(Favorit.this, "Delete Favorite Succeed!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(Favorit.this, "Delete Berhasil!", Toast.LENGTH_SHORT).show();
                 } else {
-                    Toast.makeText(Favorit.this, "Failed Delete Favorite!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(Favorit.this, "Nomor Rekening Tidak Ditemukan!", Toast.LENGTH_SHORT).show();
                 }
             }
         });

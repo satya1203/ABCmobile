@@ -12,6 +12,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.example.abcmobile.R;
 import com.example.abcmobile.api.ApiRequestData;
 import com.example.abcmobile.api.RetroFitClient;
+import com.example.abcmobile.model.AccountModel;
 import com.example.abcmobile.model.TransferResponse;
 
 import retrofit2.Call;
@@ -24,12 +25,14 @@ public class InsertTransfer extends AppCompatActivity {
     private Button btn_send;
     private String berita, rek_penerima, rek_pengirim;
     private Integer jumlah;
+    private String rek_penerima_input;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.m_transfer);
 
+        rek_penerima_input = "987654321";
         et_jumlah = findViewById(R.id.et_jumlah);
         et_berita = findViewById(R.id.et_berita);
         et_rek_penerima = findViewById(R.id.et_rek_tujuan);
@@ -44,7 +47,7 @@ public class InsertTransfer extends AppCompatActivity {
                     jumlah = Integer.valueOf(et_jumlah.getText().toString());
                     berita = et_berita.getText().toString();
                     rek_penerima = et_rek_penerima.getText().toString();
-                    rek_pengirim = "987654321";
+                    rek_pengirim = rek_penerima_input;
                     createData();
                 }
                 //startActivity(new Intent(InsertTransfer.this, Konfirmasi.class));
