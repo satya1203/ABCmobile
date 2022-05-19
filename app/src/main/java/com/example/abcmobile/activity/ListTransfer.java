@@ -64,7 +64,7 @@ public class ListTransfer extends Fragment {
 
     public void retrieveData() {
         AsyncHttpClient client = new AsyncHttpClient();
-        client.get("http://192.168.1.10:8080/listTransfer", new JsonHttpResponseHandler() {
+        client.get("http://192.168.1.8:8080/listTransfer", new JsonHttpResponseHandler() {
             @Override
             public void onSuccess(int statusCode, Header[] headers, JSONObject response) {
                 try {

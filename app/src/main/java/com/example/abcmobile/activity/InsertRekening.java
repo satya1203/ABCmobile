@@ -58,7 +58,6 @@ public class InsertRekening extends AppCompatActivity {
                 agama = et_agama.getText().toString();
 
                 createData();
-                //startActivity(new Intent(InsertRekening.this, Konfirmasi.class));
             }
         });
     }

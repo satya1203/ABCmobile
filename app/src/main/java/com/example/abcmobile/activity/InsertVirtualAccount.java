@@ -21,30 +21,30 @@ import retrofit2.Response;
 
 public class InsertVirtualAccount extends AppCompatActivity {
 
-    private EditText et_rek_pengirim, et_rek_penerima;
+    private EditText et_rek_penerima;
     private Button btn_send;
     private String rek_pengirim, rek_penerima;
+    private String rek_penerima_input;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.m_payment);
 
-        et_rek_pengirim = findViewById(R.id.et_rek_pengirim);
+        rek_penerima_input = "987654321";
         et_rek_penerima = findViewById(R.id.et_rek_penerima);
         btn_send = findViewById(R.id.btn_send_VA);
 
         btn_send.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if(TextUtils.isEmpty(et_rek_pengirim.getText().toString()) || TextUtils.isEmpty(et_rek_penerima.getText().toString())){
-                    Toast.makeText(InsertVirtualAccount.this, "Rek.Pengirim / Rek.Penerima Required!", Toast.LENGTH_LONG).show();
+                if(TextUtils.isEmpty(et_rek_penerima.getText().toString())){
+                    Toast.makeText(InsertVirtualAccount.this, "No.VA Required!", Toast.LENGTH_LONG).show();
                 } else {
-                    rek_pengirim = et_rek_pengirim.getText().toString();
+                    rek_pengirim = rek_penerima_input;
                     rek_penerima = et_rek_penerima.getText().toString();
                     createData();
                 }
-                //startActivity(new Intent(InsertVirtualAccount.this, Konfirmasi.class));
             }
         });
     }

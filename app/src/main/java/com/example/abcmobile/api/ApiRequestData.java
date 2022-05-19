@@ -58,7 +58,6 @@ public interface ApiRequestData {
         @Field("agama") String Agama
     );
 
-    //Update Kode Akses
     @FormUrlEncoded
     @POST("/gantikodeakses")
     Call<AccountResponse> updateKodeAkses(

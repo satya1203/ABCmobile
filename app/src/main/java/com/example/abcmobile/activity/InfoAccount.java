@@ -29,18 +29,20 @@ import retrofit2.Response;
 
 public class InfoAccount extends AppCompatActivity {
 
+    private String nokartu_input;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.info_saldo);
 
+        nokartu_input = "123456789";
         getData();
     }
 
     public void getData() {
-        String nokartu = "123456789";
         AsyncHttpClient client = new AsyncHttpClient();
-        client.get("http://192.168.1.10:8080/infoaccount/" + nokartu, new JsonHttpResponseHandler(){
+        client.get("http://192.168.1.8:8080/infoaccount/" + nokartu_input, new JsonHttpResponseHandler(){
             @Override
             public void onSuccess(int statusCode, Header[] headers, JSONObject response) {
                 try{

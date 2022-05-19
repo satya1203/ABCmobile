@@ -53,11 +53,10 @@
     <string name="account">Account</string>
     <string name="newaccount">New Account</string>
     <string name="details">Details</string>
-    <string name="favorit">Transaksi Favorit</string>
+    <string name="favorit">Nomor Rekening Favorit</string>
     <string name="nomorrekening">Nomor Rekening</string>
     <string name="Home">Home</string>
     <string name="Transaction">Transaction</string>
-    <string name="listfavorit">List Favorit</string>
     <string name="alias">Alias</string>
     <string name="save">Save</string>
     <string name="edit">Edit</string>
